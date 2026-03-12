@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Don Felix Meat Market</title>
+  <meta
+    name="description"
+    content="Premium butcher cuts, smoked BBQ, guacamole, salsas, and family hospitality in Los Angeles."
+  />
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: #120b08;
+      color: #f5f5f4;
+      line-height: 1.5;
+    }
+    a { text-decoration: none; color: inherit; }
+    .container {
+      width: min(1120px, calc(100% - 32px));
+      margin: 0 auto;
+    }
+    .hero {
+      background:
+        radial-gradient(circle at top, rgba(251,146,60,.18), transparent 35%),
+        linear-gradient(180deg, #1a100c 0%, #120b08 60%, #0d0907 100%);
+      border-bottom: 1px solid rgba(255,255,255,.08);
+      padding-bottom: 64px;
+    }
+    .nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 0;
+    }
+    .brand-top {
+      font-size: 28px;
+      font-weight: 800;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+      color: #fdba74;
+    }
+    .brand-sub {
+      font-size: 12px;
+      letter-spacing: .28em;
+      text-transform: uppercase;
+      color: #a8a29e;
+      margin-top: 4px;
+    }
+    .nav-links {
+      display: flex;
+      gap: 24px;
+      color: #d6d3d1;
+      font-size: 14px;
+    }
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.15fr .85fr;
+      gap: 36px;
+      align-items: center;
+      padding-top: 28px;
+    }
+    .eyebrow {
+      display: inline-block;
+      padding: 10px 16px;
+      border: 1px solid rgba(251,146,60,.3);
+      background: rgba(251,146,60,.08);
+      border-radius: 999px;
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: .18em;
+      color: #fed7aa;
+      margin-bottom: 18px;
+    }
+    h1 {
+      font-size: 68px;
+      line-height: .95;
+      margin: 0;
+      text-transform: uppercase;
+      letter-spacing: -.03em;
+    }
+    .hero p {
+      color: #d6d3d1;
+      font-size: 19px;
+      max-width: 700px;
+      margin-top: 22px;
+    }
+    .cta-row {
+      display: flex;
+      gap: 14px;
+      margin-top: 28px;
+      flex-wrap: wrap;
+    }
+    .btn {
+      padding: 15px 22px;
+      border-radius: 999px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: .12em;
+      font-size: 12px;
+      display: inline-block;
+    }
+    .btn-primary {
+      background: #f97316;
+      color: white;
+    }
+    .btn-secondary {
+      border: 1px solid rgba(255,255,255,.14);
+      background: rgba(255,255,255,.04);
+      color: #f5f5f4;
+    }
+    .stats {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 14px;
+      margin-top: 34px;
+    }
+    .stat {
+      border: 1px solid rgba(255,255,255,.09);
+      background: rgba(255,255,255,.04);
+      padding: 18px;
+      border-radius: 22px;
+    }
+    .stat strong {
+      display: block;
+      color: #fdba74;
+      font-size: 14px;
+      text-transform: uppercase;
+      letter-spacing: .1em;
+      margin-bottom: 8px;
+    }
+    .stat span {
+      color: #a8a29e;
+      font-size: 14px;
+    }
+    .card {
+      border: 1px solid rgba(255,255,255,.09);
+      background: linear-gradient(135deg, #2b1711, #17100c);
+      border-radius: 32px;
+      padding: 22px;
+      box-shadow: 0 20px 50px rgba(0,0,0,.35);
+    }
+    .inner-card {
+      border: 1px solid rgba(251,146,60,.18);
+      background: #120d0a;
+      border-radius: 26px;
+      padding: 22px;
+    }
+    .tag {
+      display: inline-block;
+      padding: 7px 12px;
+      border-radius: 999px;
+      border: 1px solid rgba(251,146,60,.28);
+      background: rgba(249,115,22,.1);
+      color: #fed7aa;
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: .14em;
+      font-weight: 700;
+    }
+    .fav-list {
+      margin-top: 18px;
+      display: grid;
+      gap: 10px;
+    }
+    .fav-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border: 1px solid rgba(255,255,255,.08);
+      background: rgba(255,255,255,.03);
+      border-radius: 18px;
+      padding: 14px 16px;
+    }
+    .fav-item span:last-child {
+      color: #fdba74;
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: .12em;
+      font-weight: 700;
+    }
+    section {
+      padding: 72px 0;
+    }
+    .section-dark {
+      background: #17100d;
+      border-top: 1px solid rgba(255,255,255,.08);
+      border-bottom: 1px solid rgba(255,255,255,.08);
+    }
+    .section-title {
+      font-size: 44px;
+      line-height: 1.02;
+      margin: 10px 0 0;
+      text-transform: uppercase;
+    }
+    .section-copy {
+      color: #a8a29e;
+      max-width: 760px;
+      margin-top: 18px;
+      font-size: 16px;
+    }
+    .grid-3, .grid-4, .grid-2 {
+      display: grid;
+      gap: 18px;
+      margin-top: 28px;
+    }
+    .grid-2 { grid-template-columns: repeat(2, 1fr); }
+    .grid-3 { grid-template-columns: repeat(3, 1fr); }
+    .grid-4 { grid-template-columns: repeat(4, 1fr); }
+    .box {
+      border: 1px solid rgba(255,255,255,.08);
+      background: rgba(255,255,255,.03);
+      border-radius: 26px;
+      padding: 24px;
+    }
+    .box h3 {
+      margin: 0 0 10px;
+      font-size: 22px;
+      text-transform: uppercase;
+    }
+    .box p {
+      margin: 0;
+      color: #a8a29e;
+      font-size: 15px;
+    }
+    .review {
+      border: 1px solid rgba(255,255,255,.08);
+      background: #17110d;
+      border-radius: 26px;
+      padding: 22px;
+    }
+    .review .stars {
+      color: #fdba74;
+      letter-spacing: 2px;
+      margin-bottom: 12px;
+    }
+    .review p {
+      margin: 0;
+      color: #e7e5e4;
+    }
+    .review strong {
+      display: block;
+      margin-top: 16px;
+      color: #a8a29e;
+      text-transform: uppercase;
+      letter-spacing: .12em;
+      font-size: 12px;
+    }
+    .contact-card {
+      border: 1px solid rgba(251,146,60,.18);
+      background: linear-gradient(135deg, rgba(249,115,22,.12), rgba(239,68,68,.08));
+      border-radius: 30px;
+      padding: 28px;
+    }
+    .contact-card .label {
+      color: #fdba74;
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: .16em;
+      margin-top: 16px;
+    }
+    .contact-card .value {
+      margin-top: 6px;
+      font-size: 20px;
+      font-weight: 700;
+    }
+    footer {
+      padding: 28px 0 40px;
+      color: #78716c;
+      text-align: center;
+      font-size: 14px;
+    }
+    @media (max-width: 900px) {
+      .hero-grid, .grid-2, .grid-3, .grid-4, .stats {
+        grid-template-columns: 1fr;
+      }
+      h1 { font-size: 46px; }
+      .section-title { font-size: 34px; }
+      .nav-links { display: none; }
+    }
+  </style>
+</head>
+<body>
+  <div class="hero">
+    <div class="container">
+      <div class="nav">
+        <div>
+          <div class="brand-top">Don Felix</div>
+          <div class="brand-sub">Meat Market</div>
+        </div>
+        <div class="nav-links">
+          <a href="#favorites">Favorites</a>
+          <a href="#story">Story</a>
+          <a href="#reviews">Reviews</a>
+          <a href="#visit">Visit</a>
+        </div>
+      </div>
+
+      <div class="hero-grid">
+        <div>
+          <div class="eyebrow">West LA favorite • family-owned • smoked fresh</div>
+          <h1>Premium cuts. Street-side smoke. Real family flavor.</h1>
+          <p>
+            Don Felix Meat Market is where butcher-shop quality meets weekend BBQ obsession.
+            From legendary beef ribs and tri-tip to fresh guacamole, salsas, and holiday feasts,
+            this is the kind of place people find once and keep coming back to.
+          </p>
+
+          <div class="cta-row">
+            <a class="btn btn-primary" href="#visit">Visit Don Felix</a>
+            <a class="btn btn-secondary" href="#reviews">See the reviews</a>
+          </div>
+
+          <div class="stats">
+            <div class="stat">
+              <strong>5-star love</strong>
+              <span>From regulars, locals, and first-timers</span>
+            </div>
+            <div class="stat">
+              <strong>Bestsellers</strong>
+              <span>Beef ribs, tri-tip, chicken, turkey</span>
+            </div>
+            <div class="stat">
+              <strong>Hospitality</strong>
+              <span>Customers say they feel like family</span>
+            </div>
+            <div class="stat">
+              <strong>Holiday ready</strong>
+              <span>Turkey and catering favorites</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="card" id="favorites">
+          <div class="inner-card">
+            <div class="tag">Smokehouse favorites</div>
+            <h2 style="margin:16px 0 0;font-size:32px;text-transform:uppercase;">What people order</h2>
+
+            <div class="fav-list">
+              <div class="fav-item"><span>Smoked beef ribs</span><span>Signature</span></div>
+              <div class="fav-item"><span>Tri-tip and brisket</span><span>Top pick</span></div>
+              <div class="fav-item"><span>Chicken thighs and turkey</span><span>Customer love</span></div>
+              <div class="fav-item"><span>Fresh guacamole, chips, and salsas</span><span>Must add</span></div>
+              <div class="fav-item"><span>Premium butcher cuts</span><span>Butcher shop</span></div>
+              <div class="fav-item"><span>Holiday catering and family feasts</span><span>Seasonal hit</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <section>
+    <div class="container">
+      <div class="eyebrow">Brand direction</div>
+      <h2 class="section-title">Bold. Smoky. Premium. Welcoming.</h2>
+      <p class="section-copy">
+        This brand should feel like a hidden neighborhood classic with a cult following.
+        Dark, rich tones. Fire accents. Premium feel. Warm energy. Not corporate. Not stiff.
+        Just real quality and real hospitality.
+      </p>
+
+      <div class="grid-3">
+        <div class="box">
+          <h3>Family-owned warmth</h3>
+          <p>People don’t just come for the meat. They come back for how they’re treated.</p>
+        </div>
+        <div class="box">
+          <h3>Westside BBQ reputation</h3>
+          <p>Customers call it a local gem, a hidden find, and some of the best BBQ in the area.</p>
+        </div>
+        <div class="box">
+          <h3>Premium quality</h3>
+          <p>Prime meats, slow smoke, real flavor, and simple sides that actually hit.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-dark" id="story">
+    <div class="container">
+      <div class="eyebrow">Why people come back</div>
+      <h2 class="section-title">Built on trust, smoke, and community.</h2>
+      <p class="section-copy">
+        Don Felix should feel like more than a butcher shop. It should feel like a neighborhood
+        institution. The kind of place people text their friends about after one plate. The kind
+        of place they trust for Sunday BBQ, family dinners, and holiday meals.
+      </p>
+
+      <div class="grid-4">
+        <div class="box">
+          <h3>Slow-smoked BBQ</h3>
+          <p>Beef ribs, brisket, tri-tip, chicken, and turkey people keep talking about.</p>
+        </div>
+        <div class="box">
+          <h3>Prime butcher quality</h3>
+          <p>A trusted neighborhood meat market with serious standards and top-quality cuts.</p>
+        </div>
+        <div class="box">
+          <h3>Fresh extras</h3>
+          <p>Guacamole, chips, salsas, drinks, and add-ons that round out the meal.</p>
+        </div>
+        <div class="box">
+          <h3>Real hospitality</h3>
+          <p>Attentive staff, fast responses, and a family-owned energy that makes the place memorable.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="reviews">
+    <div class="container">
+      <div class="eyebrow">Social proof</div>
+      <h2 class="section-title">Real reviews. Real obsession.</h2>
+      <p class="section-copy">
+        The reviews already do the selling: tender, smoky, hospitable, flavorful, hidden gem,
+        best on the Westside.
+      </p>
+
+      <div class="grid-3">
+        <div class="review">
+          <div class="stars">★★★★★</div>
+          <p>“LOVE the smoked meats here. Beef ribs and chicken. I’ve been coming here for about 2.5 years and it’s my favorite.”</p>
+          <strong>Christopher Anaya</strong>
+        </div>
+        <div class="review">
+          <div class="stars">★★★★★</div>
+          <p>“We come here often on Sundays and always enjoy their smoked ribs and chicken thighs. The guacamole is my favorite in LA.”</p>
+          <strong>Makayla Wright</strong>
+        </div>
+        <div class="review">
+          <div class="stars">★★★★★</div>
+          <p>“The beef ribs and tri tip were the best my wife and I have ever had. We will be coming back here over and over.”</p>
+          <strong>Paul Castro</strong>
+        </div>
+        <div class="review">
+          <div class="stars">★★★★★</div>
+          <p>“Best BBQ I’ve ever had. Everything is so tender, smoky. I’m definitely going to be a regular.”</p>
+          <strong>Ash</strong>
+        </div>
+        <div class="review">
+          <div class="stars">★★★★★</div>
+          <p>“My favorite new meat market for authentic Mexican meat, smokers outside, salsas, everything you need and Juan the owner was very hospitable.”</p>
+          <strong>Ulysses Solis</strong>
+        </div>
+        <div class="review">
+          <div class="stars">★★★★★</div>
+          <p>“Have you ever had a taste for something but couldn’t get the itch scratched? Don Felix fixes that.”</p>
+          <strong>Nicole Williams</strong>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-dark" id="visit">
+    <div class="container">
+      <div class="grid-2">
+        <div>
+          <div class="eyebrow">Visit Don Felix</div>
+          <h2 class="section-title">Come hungry. Leave with your new favorite spot.</h2>
+          <p class="section-copy">
+            This is where you add the real store details next: phone, hours, ordering link,
+            catering inquiry, Google map, and Instagram.
+          </p>
+        </div>
+
+        <div class="contact-card">
+          <div class="label">Location</div>
+          <div class="value">Sawtelle & Washington Place, Los Angeles</div>
+
+          <div class="label">Best known for</div>
+          <div class="value">Beef ribs, tri-tip, turkey, guacamole, and hospitality</div>
+
+          <div class="label">Best vibe</div>
+          <div class="value">Weekend smoke, family energy, premium butcher quality</div>
+
+          <div class="cta-row" style="margin-top:24px;">
+            <a class="btn btn-primary" href="#">Call now</a>
+            <a class="btn btn-secondary" href="#">Text to order</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    Don Felix Meat Market • Family-owned • Los Angeles
+  </footer>
+</body>
+</html>
