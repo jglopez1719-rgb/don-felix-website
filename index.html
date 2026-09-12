@@ -3,16 +3,24 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Don Felix Meat Market | BBQ &amp; Butcher Shop on Sawtelle</title>
-  <meta name="description" content="Family-run butcher shop and BBQ at 3987 Sawtelle Blvd in West LA. BBQ Tuesday, Saturday and Sunday. See prices, order by text, and get reheating help.">
+  <title>Don Felix Meat Market | Butcher, Groceries &amp; BBQ on Sawtelle</title>
+  <meta name="description" content="Family-run neighborhood market on Sawtelle with fresh and marinated meats, house salsas and guacamole, groceries, cold drinks, and BBQ Tuesday, Saturday and Sunday.">
   <meta name="theme-color" content="#17100c">
   <meta name="google-analytics-id" content="">
   <link rel="canonical" href="https://don-felix-website.vercel.app/">
 
   <meta property="og:type" content="website">
-  <meta property="og:title" content="Don Felix Meat Market | West LA BBQ &amp; Butcher Shop">
-  <meta property="og:description" content="Butcher shop inside. BBQ outside. See the menu, text an order, and find us on Sawtelle.">
+  <meta property="og:title" content="Don Felix Meat Market | Your Neighborhood Market on Sawtelle">
+  <meta property="og:description" content="Fresh meats, house salsas, groceries and cold drinks inside. Family-run BBQ outside on Tuesdays and weekends.">
   <meta property="og:url" content="https://don-felix-website.vercel.app/">
+  <meta property="og:image" content="https://don-felix-website.vercel.app/assets/images/og-store.jpg">
+  <meta property="og:image:width" content="768">
+  <meta property="og:image:height" content="403">
+  <meta property="og:image:alt" content="The butcher counter inside Don Felix Meat Market">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Don Felix Meat Market | Sawtelle">
+  <meta name="twitter:description" content="Fresh meats, house salsas, groceries and cold drinks inside. Family-run BBQ outside on Tuesdays and weekends.">
+  <meta name="twitter:image" content="https://don-felix-website.vercel.app/assets/images/og-store.jpg">
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -25,9 +33,11 @@
     "@type": ["Store", "FoodEstablishment"],
     "name": "Don Felix Meat Market",
     "url": "https://don-felix-website.vercel.app/",
+    "description": "Family-run neighborhood meat market with a butcher counter, marinated meats, house salsas and guacamole, groceries, drinks, snacks and barbecue.",
+    "image": "https://don-felix-website.vercel.app/assets/images/store-meat-counter.jpg",
     "telephone": "+1-310-439-1039",
     "priceRange": "$$",
-    "servesCuisine": ["Barbecue", "Butcher shop"],
+    "servesCuisine": ["Barbecue", "Mexican"],
     "hasMenu": "https://don-felix-website.vercel.app/#menu",
     "address": {
       "@type": "PostalAddress",
@@ -276,15 +286,49 @@
     .hero-fact strong { color: var(--cream); display: block; font-size: 0.86rem; }
     .hero-fact span { color: var(--ash); font-size: 0.77rem; }
 
+    .hero-visual {
+      margin: 0 auto;
+      max-width: 490px;
+      padding: 0 0 76px;
+      position: relative;
+      width: 100%;
+    }
+    .hero-photo {
+      aspect-ratio: 4 / 5;
+      border: 1px solid rgba(255,255,255,.16);
+      border-radius: 18px;
+      box-shadow: 0 28px 80px rgba(0,0,0,.48);
+      display: block;
+      object-fit: cover;
+      object-position: center 62%;
+      width: 100%;
+    }
+    .hero-photo-label {
+      background: rgba(12,8,6,.9);
+      border-left: 3px solid var(--fire);
+      bottom: 86px;
+      color: var(--bone);
+      font-size: .73rem;
+      font-weight: 700;
+      left: 16px;
+      letter-spacing: .08em;
+      padding: 9px 12px;
+      position: absolute;
+      text-transform: uppercase;
+    }
+
     .week-board {
       background:
         linear-gradient(rgba(255,255,255,.015), rgba(255,255,255,.015)),
         var(--board);
-      border: 10px solid #5d351f;
+      border: 7px solid #5d351f;
+      bottom: 0;
       box-shadow: 0 24px 70px rgba(0,0,0,.35), inset 0 0 0 2px rgba(255,255,255,.05);
-      padding: 34px 30px;
-      position: relative;
-      transform: rotate(1deg);
+      left: -26px;
+      padding: 20px 24px;
+      position: absolute;
+      right: 24px;
+      transform: rotate(-1deg);
     }
     .week-board::after {
       border: 1px solid rgba(255,255,255,.1);
@@ -294,18 +338,45 @@
       position: absolute;
     }
     .board-kicker { color: var(--gold); font-size: 0.72rem; font-weight: 700; letter-spacing: .2em; text-transform: uppercase; }
-    .week-board h2 { font-family: "Playfair Display", serif; font-size: 2.4rem; line-height: 1.05; margin: 7px 0 24px; }
-    .board-row { align-items: baseline; border-bottom: 1px dashed rgba(255,255,255,.2); display: flex; gap: 12px; justify-content: space-between; padding: 11px 0; }
+    .week-board h2 { font-family: "Playfair Display", serif; font-size: 1.75rem; line-height: 1.05; margin: 5px 0 12px; }
+    .board-row { align-items: baseline; border-bottom: 1px dashed rgba(255,255,255,.2); display: flex; gap: 12px; justify-content: space-between; padding: 7px 0; }
     .board-row:last-of-type { border-bottom: 0; }
     .board-row strong { color: var(--cream); }
     .board-row span { color: var(--ash); font-size: .87rem; text-align: right; }
-    .board-note { color: #ff8160; font-family: "Playfair Display", serif; font-size: 1.1rem; font-style: italic; margin-top: 22px; text-align: center; }
+    .board-note { color: #ff8160; font-family: "Playfair Display", serif; font-size: .96rem; font-style: italic; margin-top: 12px; text-align: center; }
 
     .notice-bar { background: var(--fire-button); color: #fff; padding: 12px 0; }
     .notice-inner { display: flex; flex-wrap: wrap; font-size: 0.78rem; font-weight: 700; gap: 12px 32px; justify-content: center; letter-spacing: .09em; text-align: center; text-transform: uppercase; }
     .notice-inner span::before { content: "•"; margin-right: 12px; opacity: .6; }
 
-    #menu { background: var(--char); }
+    #store { background: var(--char); }
+    .store-intro { align-items: end; display: grid; gap: 34px; grid-template-columns: 1fr .85fr; }
+    .store-intro-note { border-left: 3px solid var(--fire); color: var(--bone); font-family: "Playfair Display", serif; font-size: clamp(1.25rem, 2.5vw, 1.7rem); font-style: italic; line-height: 1.4; padding-left: 22px; }
+    .market-list { display: grid; gap: 12px; grid-template-columns: repeat(4, 1fr); margin-top: 42px; }
+    .market-item { background: rgba(255,255,255,.035); border-top: 3px solid var(--fire); min-height: 175px; padding: 22px; }
+    .market-item h3 { font-family: "Playfair Display", serif; font-size: 1.3rem; line-height: 1.15; }
+    .market-item p { color: var(--ash); font-size: .85rem; margin-top: 9px; }
+    .market-gallery { display: grid; gap: 12px; grid-template-columns: 1.25fr 1fr 1fr; grid-template-rows: repeat(2, 220px); margin-top: 34px; }
+    .market-photo { border: 1px solid var(--line); border-radius: 9px; margin: 0; overflow: hidden; position: relative; }
+    .market-photo:first-child { grid-row: 1 / 3; }
+    .market-photo img { display: block; height: 100%; object-fit: cover; transition: transform .45s ease; width: 100%; }
+    .market-photo:hover img { transform: scale(1.025); }
+    .market-photo figcaption {
+      background: linear-gradient(transparent, rgba(7,5,4,.92));
+      bottom: 0;
+      color: var(--cream);
+      font-size: .78rem;
+      font-weight: 700;
+      left: 0;
+      padding: 34px 14px 12px;
+      position: absolute;
+      right: 0;
+    }
+    .house-made-strip { align-items: center; background: var(--fire-button); border-radius: 10px; display: flex; flex-wrap: wrap; gap: 8px 26px; justify-content: space-between; margin-top: 26px; padding: 20px 24px; }
+    .house-made-strip strong { font-family: "Playfair Display", serif; font-size: 1.35rem; }
+    .house-made-strip span { color: #fff0e6; font-size: .9rem; }
+
+    #menu { background: var(--smoke); }
     .menu-layout { align-items: start; display: grid; gap: 34px; grid-template-columns: minmax(0, 1.25fr) minmax(300px, .75fr); margin-top: 46px; }
     .menu-board {
       background: var(--board);
@@ -347,20 +418,31 @@
     .order-form .button { border: 0; margin-top: 4px; width: 100%; }
     .form-help { color: #9f8e7f; font-size: .75rem; margin-top: 13px; }
 
-    #process { background: var(--smoke); }
-    .process-card { background: var(--soft-fire); border-left: 4px solid var(--fire); margin-top: 42px; max-width: 880px; padding: 30px 32px; }
-    .process-card p { color: var(--bone); font-size: 1.05rem; }
-    .process-card p + p { color: var(--ash); margin-top: 14px; }
+    #process { background: var(--char); }
+    .process-grid { align-items: start; display: grid; gap: 36px; grid-template-columns: minmax(0, 1.05fr) minmax(340px, .95fr); margin-top: 44px; }
+    .process-card { background: var(--soft-fire); border-left: 4px solid var(--fire); padding: 30px 32px; }
+    .process-card h3 { font-family: "Playfair Display", serif; font-size: clamp(1.6rem, 3vw, 2.25rem); line-height: 1.12; }
+    .process-card > p { color: var(--ash); font-size: .94rem; margin-top: 14px; }
+    .smoke-times { display: grid; gap: 0; list-style: none; margin-top: 24px; }
+    .smoke-times li { align-items: baseline; border-top: 1px solid rgba(255,255,255,.13); display: flex; gap: 16px; justify-content: space-between; padding: 10px 0; }
+    .smoke-times strong { color: var(--cream); }
+    .smoke-times span { color: var(--gold); font-size: .84rem; font-weight: 700; text-align: right; white-space: nowrap; }
+    .process-disclaimer { color: #aa998a !important; font-size: .78rem !important; }
+    .kitchen-gallery { display: grid; gap: 12px; grid-template-columns: 1fr 1fr; grid-template-rows: 250px 240px; }
+    .kitchen-photo { border: 1px solid var(--line); border-radius: 9px; margin: 0; overflow: hidden; position: relative; }
+    .kitchen-photo:last-child { grid-column: 1 / -1; }
+    .kitchen-photo img { display: block; height: 100%; object-fit: cover; width: 100%; }
+    .kitchen-photo figcaption { background: rgba(12,8,6,.9); bottom: 0; color: var(--bone); font-size: .76rem; left: 0; padding: 9px 12px; position: absolute; right: 0; }
 
-    #guides { background: var(--char); }
+    #guides { background: var(--smoke); }
     .guide-grid { display: grid; gap: 26px; grid-template-columns: 1fr 1fr; margin-top: 46px; }
     .guide-panel { background: rgba(255,255,255,.025); border: 1px solid var(--line); border-radius: 10px; padding: 30px; }
     .guide-panel h3 { font-family: "Playfair Display", serif; font-size: 1.8rem; line-height: 1.1; margin-bottom: 10px; }
     .guide-panel > p { color: var(--ash); font-size: .9rem; margin-bottom: 22px; }
-    details { border-top: 1px solid var(--line); }
-    details:last-child { border-bottom: 1px solid var(--line); }
-    summary { color: var(--cream); cursor: pointer; font-weight: 700; list-style-position: inside; padding: 15px 0; }
-    details p { color: var(--ash); font-size: .9rem; padding: 0 0 17px 22px; }
+    .guide-panel details { border-top: 1px solid var(--line); }
+    .guide-panel details:last-child { border-bottom: 1px solid var(--line); }
+    .guide-panel summary { color: var(--cream); cursor: pointer; font-weight: 700; list-style-position: inside; padding: 15px 0; }
+    .guide-panel details p { color: var(--ash); font-size: .9rem; padding: 0 0 17px 22px; }
     .temperature-table { border-collapse: collapse; margin-top: 8px; width: 100%; }
     .temperature-table th, .temperature-table td { border-bottom: 1px solid var(--line); padding: 13px 6px; text-align: left; vertical-align: top; }
     .temperature-table th { color: var(--fire); font-size: .7rem; letter-spacing: .1em; text-transform: uppercase; }
@@ -369,27 +451,33 @@
     .safety-note { background: rgba(231,181,43,.08); border: 1px solid rgba(231,181,43,.25); border-radius: 8px; color: var(--bone); font-size: .78rem; margin-top: 20px; padding: 14px; }
     .safety-note a { color: var(--gold); text-decoration: underline; text-underline-offset: 3px; }
 
-    #family { background: var(--smoke); }
+    #family { background: var(--char); }
     .family-grid { display: grid; gap: 12px; grid-template-columns: repeat(5, 1fr); margin-top: 44px; }
     .family-card { border-top: 3px solid var(--fire); background: rgba(255,255,255,.035); min-height: 230px; padding: 24px 20px; }
     .family-card h3 { font-family: "Playfair Display", serif; font-size: 1.45rem; }
     .family-role { color: var(--fire); font-size: .68rem; font-weight: 700; letter-spacing: .12em; margin: 4px 0 14px; text-transform: uppercase; }
     .family-card p { color: var(--ash); font-size: .86rem; }
 
-    #reviews { background: var(--char); }
+    #reviews { background: var(--smoke); }
     .review-grid { display: grid; gap: 16px; grid-template-columns: repeat(3, 1fr); margin-top: 42px; }
     .review { background: rgba(255,255,255,.03); border: 1px solid var(--line); border-radius: 9px; padding: 25px; }
     .review-stars { color: var(--gold); letter-spacing: 2px; }
     .review blockquote { color: var(--bone); font-family: "Playfair Display", serif; font-size: 1.08rem; font-style: italic; line-height: 1.55; margin-top: 13px; }
     .review cite { color: var(--ash); display: block; font-size: .72rem; font-style: normal; font-weight: 700; letter-spacing: .08em; margin-top: 17px; text-transform: uppercase; }
 
-    #catering { background: var(--smoke); }
+    #catering { background: var(--char); }
     .catering-card { align-items: center; background: var(--fire-button); border-radius: 12px; display: grid; gap: 40px; grid-template-columns: 1fr auto; margin-top: 42px; padding: 42px; }
     .catering-card h3 { font-family: "Playfair Display", serif; font-size: clamp(1.8rem, 4vw, 2.8rem); line-height: 1.05; }
     .catering-card p { color: #fff3e9; margin-top: 13px; max-width: 680px; }
     .catering-actions { display: grid; gap: 10px; min-width: 215px; }
+    .quantity-tool { align-items: end; background: rgba(255,255,255,.035); border: 1px solid var(--line); border-radius: 12px; display: grid; gap: 28px; grid-template-columns: .8fr 1.2fr; margin-top: 18px; padding: 30px; }
+    .quantity-tool h3 { font-family: "Playfair Display", serif; font-size: 1.7rem; line-height: 1.1; }
+    .quantity-tool-copy p { color: var(--ash); font-size: .84rem; margin-top: 10px; }
+    .quantity-form { display: grid; gap: 12px; grid-template-columns: 1fr 1fr auto; }
+    .quantity-form .button { align-self: end; border: 0; }
+    .quantity-result { color: var(--gold); font-family: "Playfair Display", serif; font-size: 1.18rem; font-weight: 800; grid-column: 1 / -1; min-height: 1.7em; }
 
-    #visit { background: var(--char); }
+    #visit { background: var(--smoke); }
     .visit-grid { display: grid; gap: 50px; grid-template-columns: .8fr 1.2fr; margin-top: 42px; }
     .visit-list { display: grid; gap: 24px; }
     .visit-item dt { color: var(--fire); font-size: .7rem; font-weight: 700; letter-spacing: .15em; text-transform: uppercase; }
@@ -397,6 +485,10 @@
     .visit-item a:hover { color: #ff8154; }
     .map-frame { border: 1px solid var(--line); border-radius: 10px; min-height: 410px; overflow: hidden; }
     .map-frame iframe { border: 0; display: block; filter: saturate(.7) contrast(1.05); height: 100%; min-height: 410px; width: 100%; }
+    .visit-media { display: grid; gap: 12px; grid-template-columns: minmax(150px, .55fr) minmax(0, 1.45fr); }
+    .visit-photo { border: 1px solid var(--line); border-radius: 10px; margin: 0; min-height: 410px; overflow: hidden; position: relative; }
+    .visit-photo img { display: block; height: 100%; min-height: 410px; object-fit: cover; width: 100%; }
+    .visit-photo figcaption { background: rgba(12,8,6,.9); bottom: 0; color: var(--bone); font-size: .72rem; left: 0; padding: 9px 11px; position: absolute; right: 0; }
 
     footer { background: #090604; border-top: 1px solid var(--line); padding: 34px 0 92px; }
     .footer-inner { align-items: center; display: flex; flex-wrap: wrap; gap: 16px 30px; justify-content: space-between; }
@@ -424,15 +516,18 @@
     @media (max-width: 980px) {
       .desktop-links { display: none; }
       .mobile-menu { display: block; margin-left: auto; }
-      .hero-grid, .menu-layout, .guide-grid, .visit-grid { grid-template-columns: 1fr; }
+      .hero-grid, .store-intro, .menu-layout, .process-grid, .guide-grid, .visit-grid { grid-template-columns: 1fr; }
       .hero { min-height: auto; }
-      .week-board { margin: 0 auto; max-width: 560px; transform: none; width: 100%; }
+      .hero-visual { max-width: 620px; }
+      .week-board { left: 20px; right: 20px; transform: none; }
+      .market-list { grid-template-columns: repeat(2, 1fr); }
       .order-box { position: static; }
       .family-grid { grid-template-columns: repeat(2, 1fr); }
       .family-card:last-child { grid-column: 1 / -1; }
       .review-grid { grid-template-columns: 1fr; }
       .catering-card { grid-template-columns: 1fr; }
       .catering-actions { grid-template-columns: 1fr 1fr; }
+      .quantity-tool { grid-template-columns: 1fr; }
     }
 
     @media (max-width: 620px) {
@@ -447,16 +542,31 @@
       .hero-copy { font-size: 1rem; }
       .button-row .button { width: 100%; }
       .hero-facts { display: grid; grid-template-columns: 1fr 1fr; }
+      .hero-visual { padding-bottom: 72px; }
+      .hero-photo-label { bottom: 82px; }
+      .week-board { left: 8px; padding: 18px; right: 8px; }
       .section { padding: 72px 0; }
+      .store-intro-note { margin-top: 2px; }
+      .market-list { grid-template-columns: 1fr; }
+      .market-item { min-height: 0; }
+      .market-gallery { grid-template-columns: 1fr 1fr; grid-template-rows: 280px repeat(2, 210px); }
+      .market-photo:first-child { grid-column: 1 / -1; grid-row: auto; }
+      .house-made-strip { align-items: flex-start; flex-direction: column; padding: 19px 20px; }
       .menu-board, .guide-panel, .order-box { padding: 24px 20px; }
       .price-row { gap: 8px; }
       .price-name { font-size: 1.14rem; }
       .price { font-size: .98rem; }
       .marinated-list { grid-template-columns: 1fr; }
       .guide-grid, .family-grid { grid-template-columns: 1fr; }
+      .process-card { padding: 26px 22px; }
+      .kitchen-gallery { grid-template-rows: 205px 220px; }
       .family-card:last-child { grid-column: auto; }
       .catering-card { padding: 30px 22px; }
       .catering-actions { grid-template-columns: 1fr; }
+      .quantity-tool { padding: 24px 20px; }
+      .quantity-form { grid-template-columns: 1fr; }
+      .visit-media { grid-template-columns: 1fr; }
+      .visit-photo, .visit-photo img { min-height: 250px; }
       .map-frame, .map-frame iframe { min-height: 330px; }
       .footer-inner { align-items: flex-start; flex-direction: column; }
       .mobile-actions { display: flex; }
@@ -476,16 +586,19 @@
   <nav class="site-nav" aria-label="Main navigation">
     <a class="brand" href="#home">Don <span>Felix</span></a>
     <div class="desktop-links">
+      <a href="#store">Our Store</a>
       <a href="#menu">BBQ Menu</a>
+      <a href="#process">How We Cook</a>
       <a href="#guides">Cooking Help</a>
-      <a href="#family">Our Family</a>
       <a href="#catering">Catering</a>
       <a href="#visit">Visit</a>
     </div>
     <details class="mobile-menu">
       <summary aria-label="Open section menu">Menu</summary>
       <div class="mobile-menu-panel">
+        <a href="#store">Our Store</a>
         <a href="#menu">BBQ Menu</a>
+        <a href="#process">How We Cook</a>
         <a href="#guides">Cooking Help</a>
         <a href="#family">Our Family</a>
         <a href="#catering">Catering</a>
@@ -502,44 +615,108 @@
           <div class="location-pill">West LA · Sawtelle</div>
           <h1>Butcher shop inside.<br><em>BBQ outside.</em></h1>
           <p class="hero-copy">
-            Don Felix is our family’s meat market on Sawtelle. <strong>Our dad Juan cuts meat in the back. Our mom Graciela runs the smokers.</strong> The rest of us are usually up front. If you want to know what’s ready, call or text us. We’ll tell you.
+            Don Felix is our family’s neighborhood market on Sawtelle. <strong>Come in for fresh or marinated meat, our salsas and guacamole, groceries, cold drinks and the things you need for a cookout.</strong> On BBQ days, our mom Graciela has the smokers going outside.
           </p>
           <div class="button-row">
-            <a class="button button-primary" href="#order">Build a Text Order</a>
+            <a class="button button-primary" href="#menu" data-track="bbq_menu_click" data-location="hero">See BBQ &amp; Prices</a>
+            <a class="button button-secondary" href="#store" data-track="store_section_click" data-location="hero">See What’s Inside</a>
             <a class="button button-secondary" href="tel:+13104391039" data-track="call_shop_click" data-location="hero">Call the Shop</a>
-            <a class="button button-secondary" href="https://www.google.com/maps/dir/?api=1&amp;destination=3987+Sawtelle+Blvd+Los+Angeles+CA+90066" target="_blank" rel="noopener" data-track="directions_click" data-location="hero">Directions</a>
           </div>
           <div class="hero-facts" aria-label="Quick facts">
-            <div class="hero-fact"><strong>BBQ days</strong><span>Tuesday, Saturday &amp; Sunday</span></div>
-            <div class="hero-fact"><strong>Brisket</strong><span>Sundays</span></div>
-            <div class="hero-fact"><strong>Order ahead</strong><span>(310) 945-7861</span></div>
+            <div class="hero-fact"><strong>Butcher counter</strong><span>Fresh cuts &amp; marinated meats</span></div>
+            <div class="hero-fact"><strong>Made here</strong><span>3 salsas &amp; guacamole</span></div>
+            <div class="hero-fact"><strong>BBQ days</strong><span>Tuesday &amp; weekends</span></div>
           </div>
         </div>
 
-        <aside class="week-board" aria-label="Weekly barbecue schedule">
-          <div class="board-kicker">This week at Don Felix</div>
-          <h2>BBQ Schedule</h2>
-          <div class="board-row"><strong>Tuesday</strong><span>BBQ menu</span></div>
-          <div class="board-row"><strong>Saturday</strong><span>BBQ menu</span></div>
-          <div class="board-row"><strong>Sunday</strong><span>BBQ + brisket</span></div>
-          <p class="board-note">Come early. Some items sell out.</p>
-        </aside>
+        <div class="hero-visual fade-up">
+          <img class="hero-photo" src="assets/images/store-meat-counter.jpg" width="768" height="1024" alt="USDA Choice meat counter inside Don Felix Meat Market" fetchpriority="high" decoding="async">
+          <div class="hero-photo-label">This is our counter</div>
+          <aside class="week-board" aria-label="Weekly barbecue schedule">
+            <div class="board-kicker">Outside the market</div>
+            <h2>BBQ Schedule</h2>
+            <div class="board-row"><strong>Tuesday</strong><span>BBQ menu</span></div>
+            <div class="board-row"><strong>Saturday</strong><span>BBQ menu</span></div>
+            <div class="board-row"><strong>Sunday</strong><span>BBQ + brisket</span></div>
+            <p class="board-note">Come early. Some items sell out.</p>
+          </aside>
+        </div>
       </div>
     </section>
 
     <div class="notice-bar" aria-label="Menu highlights">
       <div class="container notice-inner">
-        <span>Prices are per pound</span>
-        <span>Catering available</span>
-        <span>Please order in advance</span>
+        <span>Fresh meat &amp; custom cuts</span>
+        <span>House salsas &amp; guacamole</span>
+        <span>BBQ Tuesday, Saturday &amp; Sunday</span>
       </div>
     </div>
+
+    <section class="section" id="store">
+      <div class="container">
+        <div class="store-intro">
+          <div>
+            <div class="eyebrow">Inside Don Felix</div>
+            <h2 class="section-title">More than <em>the BBQ</em></h2>
+            <p class="section-lede">We’re a full neighborhood meat market. Stop in for dinner, a cookout, a cold drink, or the everyday things you forgot at the grocery store.</p>
+          </div>
+          <p class="store-intro-note">One stop for the meat, the salsa, the cold drinks and the foil tray.</p>
+        </div>
+
+        <div class="market-list" aria-label="What we carry inside the market">
+          <article class="market-item fade-up">
+            <h3>Butcher Counter</h3>
+            <p>Fresh beef, pork and chicken, custom cuts, and help choosing the right meat for what you’re cooking.</p>
+          </article>
+          <article class="market-item fade-up">
+            <h3>Ready to Cook</h3>
+            <p>Carne asada, short ribs, chuck roll, marinated chicken and other seasoned choices from the case.</p>
+          </article>
+          <article class="market-item fade-up">
+            <h3>Fridge &amp; Pantry</h3>
+            <p>Milk, eggs, cheese, crema, tortillas, foil, pans, storage bags and other useful market basics.</p>
+          </article>
+          <article class="market-item fade-up">
+            <h3>Drinks &amp; Snacks</h3>
+            <p>Mexican sodas, bottled drinks, sports and energy drinks, chips, candy and gum.</p>
+          </article>
+        </div>
+
+        <div class="market-gallery" aria-label="Photos from inside Don Felix Meat Market">
+          <figure class="market-photo fade-up">
+            <img src="assets/images/fresh-meat-case.jpg" width="768" height="1024" loading="lazy" decoding="async" alt="Fresh meat arranged in the Don Felix butcher case">
+            <figcaption>Fresh cuts from our butcher counter</figcaption>
+          </figure>
+          <figure class="market-photo fade-up">
+            <img src="assets/images/marinated-meats.jpg" width="768" height="1024" loading="lazy" decoding="async" alt="Marinated meats and air-chilled chicken in the display case">
+            <figcaption>Marinated meats ready to cook</figcaption>
+          </figure>
+          <figure class="market-photo fade-up">
+            <img src="assets/images/cold-drinks.jpg" width="768" height="1024" loading="lazy" decoding="async" alt="Cold sodas and bottled drinks in the Don Felix refrigerator">
+            <figcaption>Cold drinks for the meal</figcaption>
+          </figure>
+          <figure class="market-photo fade-up">
+            <img src="assets/images/store-essentials.jpg" width="768" height="1024" loading="lazy" decoding="async" alt="Foil pans, storage bags and pantry supplies on a market shelf">
+            <figcaption>Cookout and kitchen essentials</figcaption>
+          </figure>
+          <figure class="market-photo fade-up">
+            <img src="assets/images/snacks-counter.jpg" width="360" height="480" loading="lazy" decoding="async" alt="Chips, candy and gum at the front counter">
+            <figcaption>Chips, candy, gum and snacks</figcaption>
+          </figure>
+        </div>
+
+        <div class="house-made-strip fade-up">
+          <strong>Made here in the market</strong>
+          <span>Green salsa · Red salsa · Roasted salsa · Guacamole</span>
+        </div>
+      </div>
+    </section>
 
     <section class="section" id="menu">
       <div class="container">
         <div class="eyebrow">BBQ Tuesday · Saturday · Sunday</div>
         <h2 class="section-title">What’s <em>cooking</em></h2>
-        <p class="section-lede">Here are the prices from our board. Availability changes during the day, so text before you come if you have your heart set on something.</p>
+        <p class="section-lede">Here are the prices from our BBQ board. Availability changes during the day, so text before you come if you have your heart set on something.</p>
 
         <div class="menu-layout">
           <div class="menu-board fade-up" aria-label="Don Felix barbecue menu">
@@ -597,22 +774,31 @@
                   <option>Short Ribs</option>
                   <option>Chuck Roll</option>
                   <option>Marinated Chicken</option>
+                  <option>Fresh butcher-counter cut</option>
+                  <option>House Guacamole</option>
+                  <option>Green Salsa</option>
+                  <option>Red Salsa</option>
+                  <option>Roasted Salsa</option>
+                  <option>An item from inside the store</option>
                   <option>Catering / large order</option>
                   <option>Something else</option>
                 </select>
               </div>
               <div class="field">
                 <label for="order-amount">How much?</label>
-                <input id="order-amount" name="amount" type="text" placeholder="Example: 3 lb or enough for 6" required>
+                <input id="order-amount" name="amount" type="text" placeholder="Example: 3 lb, 2 containers, or enough for 6" required>
               </div>
               <div class="field">
                 <label for="pickup-day">Pickup day</label>
                 <select id="pickup-day" name="day" required>
                   <option value="">Choose a day</option>
+                  <option>Monday</option>
                   <option>Tuesday</option>
+                  <option>Wednesday</option>
+                  <option>Thursday</option>
+                  <option>Friday</option>
                   <option>Saturday</option>
                   <option>Sunday</option>
-                  <option>Another day</option>
                   <option>Not sure yet</option>
                 </select>
               </div>
@@ -630,11 +816,40 @@
 
     <section class="section" id="process">
       <div class="container">
-        <div class="eyebrow">How we work</div>
-        <h2 class="section-title">Here’s the <em>honest version</em></h2>
-        <div class="process-card fade-up">
-          <p><strong>Graciela handles the smokers outside. Juan handles the fresh meat and custom cuts inside.</strong></p>
-          <p>We serve BBQ Tuesday, Saturday and Sunday, with brisket on Sundays. We sell it by the pound, and availability changes as the day goes. If you want something specific, text us before you drive over and we’ll tell you what we have.</p>
+        <div class="eyebrow">How we make it</div>
+        <h2 class="section-title">Seasoned here. <em>Smoked here.</em></h2>
+        <p class="section-lede">We use Santa Maria seasoning on our BBQ meats. Then we load the smokers and give each meat the time it needs.</p>
+
+        <div class="process-grid">
+          <div class="process-card fade-up">
+            <h3>Our usual time in the smoker</h3>
+            <p>These are the rough smoking times we work around before the BBQ reaches the counter.</p>
+            <ul class="smoke-times">
+              <li><strong>Beef ribs</strong><span>about 5 hours</span></li>
+              <li><strong>Tri-tip</strong><span>about 3 hours</span></li>
+              <li><strong>Pork ribs · half rack</strong><span>about 2 hours</span></li>
+              <li><strong>Chicken breast</strong><span>about 1 hr 20 min</span></li>
+              <li><strong>Chicken legs</strong><span>about 50 minutes</span></li>
+              <li><strong>Chicken wings</strong><span>about 40 minutes</span></li>
+              <li><strong>Brisket</strong><span>about 12 hours</span></li>
+            </ul>
+            <p class="process-disclaimer">Times are approximate. The size of the meat, weather and smoker can change the cook. We go by doneness and safe temperature, not the clock alone.</p>
+          </div>
+
+          <div class="kitchen-gallery" aria-label="Food being made at Don Felix">
+            <figure class="kitchen-photo fade-up">
+              <img src="assets/images/roasted-salsa-tomatoes.jpg" width="326" height="580" loading="lazy" decoding="async" alt="Tomatoes roasting over hot coals for salsa">
+              <figcaption>Tomatoes roasting over the fire</figcaption>
+            </figure>
+            <figure class="kitchen-photo fade-up">
+              <img src="assets/images/salsa-guacamole-ingredients.jpg" width="768" height="1024" loading="lazy" decoding="async" alt="Fresh tomatillos, avocados, onions and chiles in the Don Felix kitchen">
+              <figcaption>Fresh ingredients in our kitchen</figcaption>
+            </figure>
+            <figure class="kitchen-photo fade-up">
+              <img src="assets/images/fresh-guacamole.jpg" width="768" height="1024" loading="lazy" decoding="async" alt="A large bowl of fresh guacamole being mixed by hand">
+              <figcaption>Our guacamole, mixed here in the market</figcaption>
+            </figure>
+          </div>
         </div>
       </div>
     </section>
@@ -764,6 +979,26 @@
             <a class="button button-dark" href="tel:+13104391039" data-track="call_shop_click" data-location="catering">Call the Shop</a>
           </div>
         </div>
+
+        <div class="quantity-tool fade-up">
+          <div class="quantity-tool-copy">
+            <div class="eyebrow">Quick planning tool</div>
+            <h3>How much BBQ meat should I start with?</h3>
+            <p>This estimate assumes BBQ with sides: about ½ pound per adult and ¼ pound per child, plus a little extra. Bone-in orders and big appetites can change it, so text us before placing a large order.</p>
+          </div>
+          <form class="quantity-form" id="quantity-form">
+            <div class="field">
+              <label for="adult-count">Adults</label>
+              <input id="adult-count" name="adults" type="number" min="0" max="500" inputmode="numeric" value="6" required>
+            </div>
+            <div class="field">
+              <label for="child-count">Children</label>
+              <input id="child-count" name="children" type="number" min="0" max="500" inputmode="numeric" value="2" required>
+            </div>
+            <button class="button button-primary" type="submit">Estimate</button>
+            <output class="quantity-result" id="quantity-result" aria-live="polite"></output>
+          </form>
+        </div>
       </div>
     </section>
 
@@ -795,14 +1030,20 @@
             </div>
           </dl>
 
-          <div class="map-frame">
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3307.8!2d-118.4434!3d34.0!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2ba90c1c7b4c7%3A0x1!2s3987+Sawtelle+Blvd%2C+Los+Angeles%2C+CA+90066!5e0!3m2!1sen!2sus!4v1"
-              allowfullscreen
-              loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade"
-              title="Map to Don Felix Meat Market">
-            </iframe>
+          <div class="visit-media">
+            <figure class="visit-photo fade-up">
+              <img src="assets/images/storefront-night.jpg" width="326" height="580" loading="lazy" decoding="async" alt="Don Felix Meat Market storefront on Sawtelle Boulevard at night">
+              <figcaption>Look for the green storefront on Sawtelle</figcaption>
+            </figure>
+            <div class="map-frame">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3307.8!2d-118.4434!3d34.0!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2ba90c1c7b4c7%3A0x1!2s3987+Sawtelle+Blvd%2C+Los+Angeles%2C+CA+90066!5e0!3m2!1sen!2sus!4v1"
+                allowfullscreen
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+                title="Map to Don Felix Meat Market">
+              </iframe>
+            </div>
           </div>
         </div>
       </div>
@@ -866,6 +1107,23 @@
       const message = `${intro} I would like ${amount} of ${item} for pickup ${day}. Is that available?`;
       trackAction('order_builder_submit', { item, pickup_day: day });
       window.location.href = `sms:+13109457861?&body=${encodeURIComponent(message)}`;
+    });
+
+    const quantityForm = document.getElementById('quantity-form');
+    const quantityResult = document.getElementById('quantity-result');
+    quantityForm.addEventListener('submit', (event) => {
+      event.preventDefault();
+      const data = new FormData(quantityForm);
+      const adults = Math.max(0, Number(data.get('adults')) || 0);
+      const children = Math.max(0, Number(data.get('children')) || 0);
+      const guestCount = adults + children;
+      if (!guestCount) {
+        quantityResult.textContent = 'Add at least one guest to get an estimate.';
+        return;
+      }
+      const pounds = Math.ceil(((adults * 0.5 + children * 0.25) * 1.1) * 2) / 2;
+      quantityResult.textContent = `Start around ${pounds} lb of BBQ meat, then text us to confirm.`;
+      trackAction('serving_estimator_use', { guest_count: guestCount, estimated_pounds: pounds });
     });
 
     document.querySelectorAll('.mobile-menu-panel a').forEach((link) => {
