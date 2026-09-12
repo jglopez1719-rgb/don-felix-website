@@ -433,6 +433,15 @@
     .kitchen-photo:last-child { grid-column: 1 / -1; }
     .kitchen-photo img { display: block; height: 100%; object-fit: cover; width: 100%; }
     .kitchen-photo figcaption { background: rgba(12,8,6,.9); bottom: 0; color: var(--bone); font-size: .76rem; left: 0; padding: 9px 12px; position: absolute; right: 0; }
+    .kitchen-details { display: grid; gap: 14px; grid-template-columns: 1fr 1fr; margin-top: 18px; }
+    .kitchen-detail-card { background: rgba(255,255,255,.035); border: 1px solid var(--line); border-radius: 10px; padding: 26px; }
+    .kitchen-detail-card h3 { font-family: "Playfair Display", serif; font-size: 1.55rem; line-height: 1.12; }
+    .kitchen-detail-card > p { color: var(--ash); font-size: .88rem; margin-top: 10px; }
+    .ingredient-list { display: grid; gap: 8px; list-style: none; margin-top: 18px; }
+    .ingredient-list li { color: var(--bone); font-size: .86rem; padding-left: 17px; position: relative; }
+    .ingredient-list li::before { color: var(--fire); content: "•"; font-weight: 700; left: 0; position: absolute; }
+    .ingredient-list strong { color: var(--cream); }
+    .ingredient-note { color: #aa998a !important; font-size: .76rem !important; }
 
     #guides { background: var(--smoke); }
     .guide-grid { display: grid; gap: 26px; grid-template-columns: 1fr 1fr; margin-top: 46px; }
@@ -560,6 +569,8 @@
       .guide-grid, .family-grid { grid-template-columns: 1fr; }
       .process-card { padding: 26px 22px; }
       .kitchen-gallery { grid-template-rows: 205px 220px; }
+      .kitchen-details { grid-template-columns: 1fr; }
+      .kitchen-detail-card { padding: 23px 20px; }
       .family-card:last-child { grid-column: auto; }
       .catering-card { padding: 30px 22px; }
       .catering-actions { grid-template-columns: 1fr; }
@@ -850,6 +861,33 @@
               <figcaption>Our guacamole, mixed here in the market</figcaption>
             </figure>
           </div>
+        </div>
+
+        <div class="kitchen-details">
+          <article class="kitchen-detail-card fade-up">
+            <div class="eyebrow">From our kitchen</div>
+            <h3>Four things we make here</h3>
+            <p>We make green salsa, red salsa, roasted salsa and guacamole in the market. We work with fresh tomatillos, tomatoes, avocados, onions and chiles, and roast tomatoes over the fire.</p>
+            <ul class="ingredient-list">
+              <li><strong>Green salsa</strong></li>
+              <li><strong>Red salsa</strong></li>
+              <li><strong>Roasted salsa</strong></li>
+              <li><strong>Fresh guacamole</strong></li>
+            </ul>
+          </article>
+
+          <article class="kitchen-detail-card fade-up">
+            <div class="eyebrow">For our meats</div>
+            <h3>The seasonings and marinades we use</h3>
+            <p>Different meats get different preparation. These are some of the products we use in the Don Felix kitchen:</p>
+            <ul class="ingredient-list">
+              <li><strong>Santa Maria seasoning</strong> for our BBQ meats</li>
+              <li><strong>Chef Merito Carne Asada Seasoning</strong></li>
+              <li><strong>Goya Mojo Criollo</strong> marinade</li>
+              <li><strong>Goya Naranja Agria</strong> bitter orange marinade</li>
+            </ul>
+            <p class="ingredient-note">Not every meat uses every ingredient. If you have an allergy or need the exact ingredients for a particular item, ask us at the counter before ordering.</p>
+          </article>
         </div>
       </div>
     </section>

@@ -15,7 +15,7 @@ Current BBQ schedule shown on the site:
 - Sunday
 - Brisket on Sunday
 
-The “How We Cook” section also lists the family’s approximate smoking times and Santa Maria seasoning. Keep the word “approximate” with those times because meat size, weather and the smoker can change a cook.
+The “How We Cook” section also lists the family’s approximate smoking times and the seasonings and marinades they identified: Santa Maria seasoning, Chef Merito Carne Asada Seasoning, Goya Mojo Criollo and Goya Naranja Agria. Keep the word “approximate” with the smoking times because meat size, weather and the smoker can change a cook. Do not claim that every product is used on every meat.
 
 ## Store photos
 
