@@ -6,7 +6,16 @@ The site represents the whole store: the butcher counter, marinated meats, house
 
 ## Updating the menu
 
-Menu prices and item names are in the `#menu` section of `index.html`. The text-order builder has a matching list of items in the `<select id="order-item">` element. When an item changes, update both places.
+The page has two clearly separated price areas: raw and marinated meat sold inside the market in the `#store` section, and cooked BBQ in the `#menu` section. The text-order builder has matching groups in the `<select id="order-item">` element. When an item changes, update the relevant price area and the matching order option.
+
+Butcher-case prices read from the supplied store photos:
+
+- Fresh beef ribs: $12.99/lb
+- Fresh short ribs: $14.99/lb
+- Marinated chuck roll: $10.99/lb
+- Marinated chicken legs: $4.99/lb
+
+Several other case labels were not clear enough to read, so those prices were intentionally left off the website. Because counter prices can change, the public page tells customers to text for confirmation.
 
 Current BBQ schedule shown on the site:
 
@@ -30,7 +39,7 @@ The page includes Vercel Web Analytics for visitor and page-view reporting. In V
 3. Enable Web Analytics.
 4. Redeploy the site.
 
-Customer-action events are already attached to the call, text, directions, Instagram, reviews, catering and order-builder buttons. Vercel custom events require a plan that supports them.
+Customer-action events are already attached to the call, text, directions, navigation, Instagram, reviews, catering and order-builder buttons. The site also records one privacy-safe view event the first time each main section enters the screen. Vercel custom events currently require a Pro or Enterprise plan; page views are available on all Vercel plans. If the project uses a free Vercel plan, add the optional Google Analytics ID below to see the action events there.
 
 ## Optional Google Analytics 4
 
@@ -47,12 +56,16 @@ Leave the value blank if Google Analytics should stay disabled. Never place cust
 - `text_order_click`
 - `call_shop_click`
 - `directions_click`
+- `navigation_click`
+- `section_view`
+- `order_builder_start`
 - `order_builder_submit`
 - `catering_text_click`
 - `google_reviews_click`
 - `instagram_click`
 - `bbq_menu_click`
 - `store_section_click`
+- `butcher_case_text_click`
 - `serving_estimator_use`
 
 Website analytics can count a tap on a phone or text link. It cannot confirm that the person completed a call or sent a text.
@@ -61,6 +74,6 @@ Website analytics can count a tap on a phone or text link. It cannot confirm tha
 
 - The wood used in the smokers, if the family wants that public
 - A confirmed price for mac and cheese
-- Current prices for the marinated butcher-counter meats
+- Any butcher-counter prices not legible in the supplied photos
 - Current prices and container sizes for salsa and guacamole
 - Holiday turkey sizes, pricing and order deadlines

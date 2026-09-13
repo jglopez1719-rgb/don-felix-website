@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Don Felix Meat Market | Butcher, Groceries &amp; BBQ on Sawtelle</title>
   <meta name="description" content="Family-run neighborhood market on Sawtelle with fresh and marinated meats, house salsas and guacamole, groceries, cold drinks, and BBQ Tuesday, Saturday and Sunday.">
-  <meta name="theme-color" content="#17100c">
+  <meta name="theme-color" content="#0d1913">
   <meta name="google-analytics-id" content="">
   <link rel="canonical" href="https://don-felix-website.vercel.app/">
 
@@ -25,12 +25,12 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&amp;family=Playfair+Display:ital,wght@0,800;0,900;1,800&amp;display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,700;0,800;0,900;1,700&amp;family=Patrick+Hand&amp;family=Work+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
 
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": ["Store", "FoodEstablishment"],
+    "@type": ["GroceryStore", "ButcherShop", "FoodEstablishment"],
     "name": "Don Felix Meat Market",
     "url": "https://don-felix-website.vercel.app/",
     "description": "Family-run neighborhood meat market with a butcher counter, marinated meats, house salsas and guacamole, groceries, drinks, snacks and barbecue.",
@@ -74,18 +74,19 @@
 
   <style>
     :root {
-      --fire: #ee4b16;
-      --fire-button: #c83a0d;
-      --fire-dark: #a92c09;
-      --gold: #e7b52b;
-      --cream: #fff7e9;
-      --bone: #eadbc8;
-      --smoke: #17100c;
-      --char: #241711;
-      --board: #1d2420;
-      --ash: #c4b5a5;
-      --line: rgba(255, 247, 233, 0.14);
-      --soft-fire: rgba(238, 75, 22, 0.12);
+      --fire: #d45443;
+      --fire-button: #a53c34;
+      --fire-dark: #7f2c2a;
+      --gold: #d9ad4d;
+      --cream: #f0dfbb;
+      --bone: #d6c6a4;
+      --smoke: #0d1913;
+      --char: #173024;
+      --board: #14241c;
+      --ash: #aeb9a8;
+      --line: rgba(230, 211, 172, 0.16);
+      --soft-fire: rgba(212, 84, 67, 0.11);
+      --chalk-font: "Patrick Hand", cursive;
       --max: 1180px;
     }
 
@@ -94,7 +95,7 @@
     body {
       background: var(--smoke);
       color: var(--cream);
-      font-family: "DM Sans", sans-serif;
+      font-family: "Work Sans", sans-serif;
       line-height: 1.6;
       overflow-x: hidden;
     }
@@ -106,7 +107,7 @@
       opacity: 0.35;
       background-image:
         radial-gradient(circle at 20% 30%, rgba(255,255,255,.025) 1px, transparent 1px),
-        radial-gradient(circle at 80% 10%, rgba(238,75,22,.025) 1px, transparent 1px);
+        radial-gradient(circle at 80% 10%, rgba(217,173,77,.03) 1px, transparent 1px);
       background-size: 54px 54px, 81px 81px;
       z-index: -1;
     }
@@ -136,7 +137,7 @@
     }
     .section-title {
       color: var(--cream);
-      font-family: "Playfair Display", serif;
+      font-family: "Bitter", serif;
       font-size: clamp(2.3rem, 5vw, 4rem);
       font-weight: 900;
       letter-spacing: -0.025em;
@@ -151,8 +152,8 @@
     .site-nav {
       align-items: center;
       backdrop-filter: blur(14px);
-      background: rgba(23, 16, 12, 0.94);
-      border-bottom: 1px solid rgba(238, 75, 22, 0.25);
+      background: rgba(13, 25, 19, 0.96);
+      border-bottom: 1px solid rgba(217, 173, 77, 0.24);
       display: flex;
       gap: 24px;
       justify-content: space-between;
@@ -166,7 +167,7 @@
     }
     .brand {
       color: var(--cream);
-      font-family: "Playfair Display", serif;
+      font-family: "Bitter", serif;
       font-size: 1.25rem;
       font-weight: 900;
       white-space: nowrap;
@@ -207,7 +208,7 @@
     .nav-order {
       background: var(--fire-button);
       border-radius: 5px;
-      color: #fff;
+      color: var(--cream);
       font-size: 0.78rem;
       font-weight: 700;
       letter-spacing: 0.07em;
@@ -220,8 +221,9 @@
     .hero {
       align-items: center;
       background:
-        radial-gradient(circle at 80% 30%, rgba(238, 75, 22, 0.2), transparent 35%),
-        linear-gradient(145deg, #17100c 5%, #0c0806 100%);
+        radial-gradient(circle at 82% 28%, rgba(212, 84, 67, 0.18), transparent 34%),
+        radial-gradient(circle at 18% 80%, rgba(217, 173, 77, 0.08), transparent 30%),
+        linear-gradient(145deg, #10251a 5%, #08120d 100%);
       display: grid;
       min-height: 770px;
       padding: 130px 0 72px;
@@ -235,9 +237,9 @@
     .location-pill {
       align-items: center;
       background: var(--soft-fire);
-      border: 1px solid rgba(238, 75, 22, 0.4);
+      border: 1px solid rgba(212, 84, 67, 0.52);
       border-radius: 999px;
-      color: #ff8154;
+      color: #ea8c7a;
       display: inline-flex;
       font-size: 0.72rem;
       font-weight: 700;
@@ -250,7 +252,7 @@
     .location-pill::before { content: ""; width: 7px; height: 7px; border-radius: 50%; background: var(--fire); }
     h1 {
       color: var(--cream);
-      font-family: "Playfair Display", serif;
+      font-family: "Bitter", serif;
       font-size: clamp(3.3rem, 7.4vw, 6.4rem);
       font-weight: 900;
       letter-spacing: -0.045em;
@@ -276,12 +278,12 @@
       transition: transform .2s, background .2s, border-color .2s;
     }
     .button:hover { transform: translateY(-2px); }
-    .button-primary { background: var(--fire-button); color: #fff; }
+    .button-primary { background: var(--fire-button); color: var(--cream); }
     .button-primary:hover { background: var(--fire-dark); }
-    .button-secondary { border-color: rgba(255, 247, 233, 0.28); color: var(--cream); }
-    .button-secondary:hover { background: rgba(255, 247, 233, 0.06); border-color: rgba(255, 247, 233, 0.55); }
-    .button-dark { background: var(--smoke); border-color: rgba(255, 247, 233, 0.22); color: var(--cream); }
-    .button-dark:hover { background: #070504; }
+    .button-secondary { border-color: rgba(240, 223, 187, 0.3); color: var(--cream); }
+    .button-secondary:hover { background: rgba(240, 223, 187, 0.07); border-color: rgba(240, 223, 187, 0.58); }
+    .button-dark { background: var(--smoke); border-color: rgba(240, 223, 187, 0.25); color: var(--cream); }
+    .button-dark:hover { background: #07110c; }
     .hero-facts { border-top: 1px solid var(--line); display: flex; flex-wrap: wrap; gap: 18px 32px; margin-top: 42px; padding-top: 22px; }
     .hero-fact strong { color: var(--cream); display: block; font-size: 0.86rem; }
     .hero-fact span { color: var(--ash); font-size: 0.77rem; }
@@ -304,7 +306,7 @@
       width: 100%;
     }
     .hero-photo-label {
-      background: rgba(12,8,6,.9);
+      background: rgba(8,18,13,.92);
       border-left: 3px solid var(--fire);
       bottom: 86px;
       color: var(--bone);
@@ -319,9 +321,10 @@
 
     .week-board {
       background:
-        linear-gradient(rgba(255,255,255,.015), rgba(255,255,255,.015)),
+        repeating-linear-gradient(0deg, transparent 0, transparent 3px, rgba(240,223,187,.018) 4px),
+        radial-gradient(circle at 28% 22%, rgba(240,223,187,.035), transparent 36%),
         var(--board);
-      border: 7px solid #5d351f;
+      border: 7px solid #80643a;
       bottom: 0;
       box-shadow: 0 24px 70px rgba(0,0,0,.35), inset 0 0 0 2px rgba(255,255,255,.05);
       left: -26px;
@@ -338,31 +341,58 @@
       position: absolute;
     }
     .board-kicker { color: var(--gold); font-size: 0.72rem; font-weight: 700; letter-spacing: .2em; text-transform: uppercase; }
-    .week-board h2 { font-family: "Playfair Display", serif; font-size: 1.75rem; line-height: 1.05; margin: 5px 0 12px; }
+    .week-board h2 { font-family: var(--chalk-font); font-size: 2rem; font-weight: 400; line-height: 1.05; margin: 5px 0 12px; }
     .board-row { align-items: baseline; border-bottom: 1px dashed rgba(255,255,255,.2); display: flex; gap: 12px; justify-content: space-between; padding: 7px 0; }
     .board-row:last-of-type { border-bottom: 0; }
-    .board-row strong { color: var(--cream); }
-    .board-row span { color: var(--ash); font-size: .87rem; text-align: right; }
-    .board-note { color: #ff8160; font-family: "Playfair Display", serif; font-size: .96rem; font-style: italic; margin-top: 12px; text-align: center; }
+    .board-row strong { color: var(--cream); font-family: var(--chalk-font); font-size: 1.1rem; font-weight: 400; }
+    .board-row span { color: var(--ash); font-family: var(--chalk-font); font-size: 1rem; text-align: right; }
+    .board-note { color: #e58a78; font-family: var(--chalk-font); font-size: 1.08rem; margin-top: 12px; text-align: center; }
 
-    .notice-bar { background: var(--fire-button); color: #fff; padding: 12px 0; }
+    .notice-bar { background: var(--gold); color: #102016; padding: 12px 0; }
     .notice-inner { display: flex; flex-wrap: wrap; font-size: 0.78rem; font-weight: 700; gap: 12px 32px; justify-content: center; letter-spacing: .09em; text-align: center; text-transform: uppercase; }
     .notice-inner span::before { content: "•"; margin-right: 12px; opacity: .6; }
 
     #store { background: var(--char); }
     .store-intro { align-items: end; display: grid; gap: 34px; grid-template-columns: 1fr .85fr; }
-    .store-intro-note { border-left: 3px solid var(--fire); color: var(--bone); font-family: "Playfair Display", serif; font-size: clamp(1.25rem, 2.5vw, 1.7rem); font-style: italic; line-height: 1.4; padding-left: 22px; }
+    .store-intro-note { border-left: 3px solid var(--gold); color: var(--bone); font-family: "Bitter", serif; font-size: clamp(1.25rem, 2.5vw, 1.7rem); font-style: italic; line-height: 1.4; padding-left: 22px; }
     .market-list { display: grid; gap: 12px; grid-template-columns: repeat(4, 1fr); margin-top: 42px; }
-    .market-item { background: rgba(255,255,255,.035); border-top: 3px solid var(--fire); min-height: 175px; padding: 22px; }
-    .market-item h3 { font-family: "Playfair Display", serif; font-size: 1.3rem; line-height: 1.15; }
+    .market-item { background: rgba(240,223,187,.045); border-top: 3px solid var(--gold); min-height: 175px; padding: 22px; }
+    .market-item h3 { font-family: "Bitter", serif; font-size: 1.3rem; line-height: 1.15; }
     .market-item p { color: var(--ash); font-size: .85rem; margin-top: 9px; }
+    .butcher-prices {
+      background:
+        repeating-linear-gradient(0deg, transparent 0, transparent 3px, rgba(240,223,187,.014) 4px),
+        radial-gradient(circle at 88% 12%, rgba(217,173,77,.05), transparent 28%),
+        var(--board);
+      border: 1px solid rgba(217,173,77,.28);
+      border-radius: 12px;
+      margin-top: 34px;
+      overflow: hidden;
+      padding: 30px;
+    }
+    .butcher-price-heading { align-items: end; display: grid; gap: 22px; grid-template-columns: .8fr 1.2fr; }
+    .butcher-price-heading h3 { font-family: "Bitter", serif; font-size: clamp(1.7rem, 3vw, 2.35rem); line-height: 1.08; }
+    .butcher-price-heading p { color: var(--ash); font-size: .88rem; }
+    .case-price-grid { display: grid; gap: 10px; grid-template-columns: repeat(4, 1fr); margin-top: 26px; }
+    .case-price {
+      background: rgba(240,223,187,.045);
+      border-left: 3px solid var(--gold);
+      min-height: 144px;
+      padding: 18px;
+    }
+    .case-kind { color: var(--fire); display: block; font-size: .66rem; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; }
+    .case-price h4 { font-family: var(--chalk-font); font-size: 1.45rem; font-weight: 400; line-height: 1.1; margin-top: 9px; }
+    .case-price strong { color: var(--gold); display: block; font-family: var(--chalk-font); font-size: 1.5rem; font-weight: 400; margin-top: 13px; }
+    .case-price small { color: var(--ash); font-size: .7rem; font-weight: 500; }
+    .butcher-price-foot { align-items: center; border-top: 1px solid var(--line); display: flex; flex-wrap: wrap; gap: 16px 24px; justify-content: space-between; margin-top: 24px; padding-top: 20px; }
+    .butcher-price-foot p { color: var(--ash); font-size: .78rem; max-width: 650px; }
     .market-gallery { display: grid; gap: 12px; grid-template-columns: 1.25fr 1fr 1fr; grid-template-rows: repeat(2, 220px); margin-top: 34px; }
     .market-photo { border: 1px solid var(--line); border-radius: 9px; margin: 0; overflow: hidden; position: relative; }
     .market-photo:first-child { grid-row: 1 / 3; }
     .market-photo img { display: block; height: 100%; object-fit: cover; transition: transform .45s ease; width: 100%; }
     .market-photo:hover img { transform: scale(1.025); }
     .market-photo figcaption {
-      background: linear-gradient(transparent, rgba(7,5,4,.92));
+      background: linear-gradient(transparent, rgba(7,17,12,.94));
       bottom: 0;
       color: var(--cream);
       font-size: .78rem;
@@ -372,14 +402,17 @@
       position: absolute;
       right: 0;
     }
-    .house-made-strip { align-items: center; background: var(--fire-button); border-radius: 10px; display: flex; flex-wrap: wrap; gap: 8px 26px; justify-content: space-between; margin-top: 26px; padding: 20px 24px; }
-    .house-made-strip strong { font-family: "Playfair Display", serif; font-size: 1.35rem; }
-    .house-made-strip span { color: #fff0e6; font-size: .9rem; }
+    .house-made-strip { align-items: center; background: #244a34; border: 1px solid rgba(217,173,77,.3); border-left: 5px solid var(--gold); border-radius: 10px; display: flex; flex-wrap: wrap; gap: 8px 26px; justify-content: space-between; margin-top: 26px; padding: 20px 24px; }
+    .house-made-strip strong { font-family: "Bitter", serif; font-size: 1.35rem; }
+    .house-made-strip span { color: var(--bone); font-size: .9rem; }
 
     #menu { background: var(--smoke); }
     .menu-layout { align-items: start; display: grid; gap: 34px; grid-template-columns: minmax(0, 1.25fr) minmax(300px, .75fr); margin-top: 46px; }
     .menu-board {
-      background: var(--board);
+      background:
+        repeating-linear-gradient(0deg, transparent 0, transparent 3px, rgba(240,223,187,.014) 4px),
+        radial-gradient(circle at 16% 8%, rgba(240,223,187,.035), transparent 30%),
+        var(--board);
       border: 1px solid rgba(255,255,255,.14);
       border-radius: 12px;
       box-shadow: 0 24px 60px rgba(0,0,0,.18);
@@ -390,23 +423,19 @@
     .menu-group-title { color: var(--gold); font-size: .74rem; font-weight: 700; letter-spacing: .16em; margin-bottom: 9px; text-transform: uppercase; }
     .price-row { align-items: baseline; display: grid; gap: 12px; grid-template-columns: auto 1fr auto; padding: 10px 0; }
     .price-row::after { border-bottom: 1px dashed rgba(255,255,255,.2); content: ""; grid-column: 2; grid-row: 1; }
-    .price-name { color: var(--cream); font-family: "Playfair Display", serif; font-size: clamp(1.25rem, 2vw, 1.55rem); font-weight: 800; grid-column: 1; }
-    .price { color: #fff; font-size: 1.1rem; font-weight: 700; grid-column: 3; }
+    .price-name { color: var(--cream); font-family: var(--chalk-font); font-size: clamp(1.45rem, 2.2vw, 1.78rem); font-weight: 400; grid-column: 1; }
+    .price { color: var(--gold); font-family: var(--chalk-font); font-size: 1.34rem; font-weight: 400; grid-column: 3; }
     .price small { color: var(--ash); font-size: .72rem; font-weight: 500; }
-    .price-note { color: #ff8060; font-size: .75rem; grid-column: 1 / -1; margin-top: -6px; }
-    .marinated-list { display: grid; gap: 8px; grid-template-columns: repeat(2, minmax(0,1fr)); list-style: none; margin-top: 14px; }
-    .marinated-list li { color: var(--bone); }
-    .marinated-list li::before { color: var(--gold); content: "✓"; font-weight: 700; margin-right: 9px; }
-
-    .order-box { background: var(--smoke); border: 1px solid rgba(238,75,22,.35); border-radius: 12px; padding: 30px; position: sticky; top: 94px; }
-    .order-box h3 { font-family: "Playfair Display", serif; font-size: 1.8rem; line-height: 1.1; }
+    .price-note { color: #e58a78; font-size: .75rem; grid-column: 1 / -1; margin-top: -6px; }
+    .order-box { background: var(--smoke); border: 1px solid rgba(217,173,77,.34); border-radius: 12px; padding: 30px; position: sticky; top: 94px; }
+    .order-box h3 { font-family: "Bitter", serif; font-size: 1.8rem; line-height: 1.1; }
     .order-box > p { color: var(--ash); font-size: .9rem; margin: 10px 0 22px; }
     .order-form { display: grid; gap: 14px; }
     .field { display: grid; gap: 6px; }
     .field label { color: var(--bone); font-size: .75rem; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; }
     .field input, .field select {
       appearance: none;
-      background: #2b1d16;
+      background: #13261c;
       border: 1px solid rgba(255,255,255,.17);
       border-radius: 5px;
       color: var(--cream);
@@ -414,39 +443,39 @@
       padding: 11px 12px;
       width: 100%;
     }
-    .field input::placeholder { color: #8f7e70; }
+    .field input::placeholder { color: #7f907f; }
     .order-form .button { border: 0; margin-top: 4px; width: 100%; }
-    .form-help { color: #9f8e7f; font-size: .75rem; margin-top: 13px; }
+    .form-help { color: #92a092; font-size: .75rem; margin-top: 13px; }
 
     #process { background: var(--char); }
     .process-grid { align-items: start; display: grid; gap: 36px; grid-template-columns: minmax(0, 1.05fr) minmax(340px, .95fr); margin-top: 44px; }
     .process-card { background: var(--soft-fire); border-left: 4px solid var(--fire); padding: 30px 32px; }
-    .process-card h3 { font-family: "Playfair Display", serif; font-size: clamp(1.6rem, 3vw, 2.25rem); line-height: 1.12; }
+    .process-card h3 { font-family: "Bitter", serif; font-size: clamp(1.6rem, 3vw, 2.25rem); line-height: 1.12; }
     .process-card > p { color: var(--ash); font-size: .94rem; margin-top: 14px; }
     .smoke-times { display: grid; gap: 0; list-style: none; margin-top: 24px; }
     .smoke-times li { align-items: baseline; border-top: 1px solid rgba(255,255,255,.13); display: flex; gap: 16px; justify-content: space-between; padding: 10px 0; }
     .smoke-times strong { color: var(--cream); }
     .smoke-times span { color: var(--gold); font-size: .84rem; font-weight: 700; text-align: right; white-space: nowrap; }
-    .process-disclaimer { color: #aa998a !important; font-size: .78rem !important; }
+    .process-disclaimer { color: #98a496 !important; font-size: .78rem !important; }
     .kitchen-gallery { display: grid; gap: 12px; grid-template-columns: 1fr 1fr; grid-template-rows: 250px 240px; }
     .kitchen-photo { border: 1px solid var(--line); border-radius: 9px; margin: 0; overflow: hidden; position: relative; }
     .kitchen-photo:last-child { grid-column: 1 / -1; }
     .kitchen-photo img { display: block; height: 100%; object-fit: cover; width: 100%; }
-    .kitchen-photo figcaption { background: rgba(12,8,6,.9); bottom: 0; color: var(--bone); font-size: .76rem; left: 0; padding: 9px 12px; position: absolute; right: 0; }
+    .kitchen-photo figcaption { background: rgba(8,18,13,.92); bottom: 0; color: var(--bone); font-size: .76rem; left: 0; padding: 9px 12px; position: absolute; right: 0; }
     .kitchen-details { display: grid; gap: 14px; grid-template-columns: 1fr 1fr; margin-top: 18px; }
     .kitchen-detail-card { background: rgba(255,255,255,.035); border: 1px solid var(--line); border-radius: 10px; padding: 26px; }
-    .kitchen-detail-card h3 { font-family: "Playfair Display", serif; font-size: 1.55rem; line-height: 1.12; }
+    .kitchen-detail-card h3 { font-family: "Bitter", serif; font-size: 1.55rem; line-height: 1.12; }
     .kitchen-detail-card > p { color: var(--ash); font-size: .88rem; margin-top: 10px; }
     .ingredient-list { display: grid; gap: 8px; list-style: none; margin-top: 18px; }
     .ingredient-list li { color: var(--bone); font-size: .86rem; padding-left: 17px; position: relative; }
     .ingredient-list li::before { color: var(--fire); content: "•"; font-weight: 700; left: 0; position: absolute; }
     .ingredient-list strong { color: var(--cream); }
-    .ingredient-note { color: #aa998a !important; font-size: .76rem !important; }
+    .ingredient-note { color: #98a496 !important; font-size: .76rem !important; }
 
     #guides { background: var(--smoke); }
     .guide-grid { display: grid; gap: 26px; grid-template-columns: 1fr 1fr; margin-top: 46px; }
     .guide-panel { background: rgba(255,255,255,.025); border: 1px solid var(--line); border-radius: 10px; padding: 30px; }
-    .guide-panel h3 { font-family: "Playfair Display", serif; font-size: 1.8rem; line-height: 1.1; margin-bottom: 10px; }
+    .guide-panel h3 { font-family: "Bitter", serif; font-size: 1.8rem; line-height: 1.1; margin-bottom: 10px; }
     .guide-panel > p { color: var(--ash); font-size: .9rem; margin-bottom: 22px; }
     .guide-panel details { border-top: 1px solid var(--line); }
     .guide-panel details:last-child { border-bottom: 1px solid var(--line); }
@@ -463,7 +492,7 @@
     #family { background: var(--char); }
     .family-grid { display: grid; gap: 12px; grid-template-columns: repeat(5, 1fr); margin-top: 44px; }
     .family-card { border-top: 3px solid var(--fire); background: rgba(255,255,255,.035); min-height: 230px; padding: 24px 20px; }
-    .family-card h3 { font-family: "Playfair Display", serif; font-size: 1.45rem; }
+    .family-card h3 { font-family: "Bitter", serif; font-size: 1.45rem; }
     .family-role { color: var(--fire); font-size: .68rem; font-weight: 700; letter-spacing: .12em; margin: 4px 0 14px; text-transform: uppercase; }
     .family-card p { color: var(--ash); font-size: .86rem; }
 
@@ -471,41 +500,41 @@
     .review-grid { display: grid; gap: 16px; grid-template-columns: repeat(3, 1fr); margin-top: 42px; }
     .review { background: rgba(255,255,255,.03); border: 1px solid var(--line); border-radius: 9px; padding: 25px; }
     .review-stars { color: var(--gold); letter-spacing: 2px; }
-    .review blockquote { color: var(--bone); font-family: "Playfair Display", serif; font-size: 1.08rem; font-style: italic; line-height: 1.55; margin-top: 13px; }
+    .review blockquote { color: var(--bone); font-family: "Bitter", serif; font-size: 1.08rem; font-style: italic; line-height: 1.55; margin-top: 13px; }
     .review cite { color: var(--ash); display: block; font-size: .72rem; font-style: normal; font-weight: 700; letter-spacing: .08em; margin-top: 17px; text-transform: uppercase; }
 
     #catering { background: var(--char); }
-    .catering-card { align-items: center; background: var(--fire-button); border-radius: 12px; display: grid; gap: 40px; grid-template-columns: 1fr auto; margin-top: 42px; padding: 42px; }
-    .catering-card h3 { font-family: "Playfair Display", serif; font-size: clamp(1.8rem, 4vw, 2.8rem); line-height: 1.05; }
-    .catering-card p { color: #fff3e9; margin-top: 13px; max-width: 680px; }
+    .catering-card { align-items: center; background: #244a34; border: 1px solid rgba(217,173,77,.28); border-radius: 12px; display: grid; gap: 40px; grid-template-columns: 1fr auto; margin-top: 42px; padding: 42px; }
+    .catering-card h3 { font-family: "Bitter", serif; font-size: clamp(1.8rem, 4vw, 2.8rem); line-height: 1.05; }
+    .catering-card p { color: var(--bone); margin-top: 13px; max-width: 680px; }
     .catering-actions { display: grid; gap: 10px; min-width: 215px; }
     .quantity-tool { align-items: end; background: rgba(255,255,255,.035); border: 1px solid var(--line); border-radius: 12px; display: grid; gap: 28px; grid-template-columns: .8fr 1.2fr; margin-top: 18px; padding: 30px; }
-    .quantity-tool h3 { font-family: "Playfair Display", serif; font-size: 1.7rem; line-height: 1.1; }
+    .quantity-tool h3 { font-family: "Bitter", serif; font-size: 1.7rem; line-height: 1.1; }
     .quantity-tool-copy p { color: var(--ash); font-size: .84rem; margin-top: 10px; }
     .quantity-form { display: grid; gap: 12px; grid-template-columns: 1fr 1fr auto; }
     .quantity-form .button { align-self: end; border: 0; }
-    .quantity-result { color: var(--gold); font-family: "Playfair Display", serif; font-size: 1.18rem; font-weight: 800; grid-column: 1 / -1; min-height: 1.7em; }
+    .quantity-result { color: var(--gold); font-family: "Bitter", serif; font-size: 1.18rem; font-weight: 800; grid-column: 1 / -1; min-height: 1.7em; }
 
     #visit { background: var(--smoke); }
     .visit-grid { display: grid; gap: 50px; grid-template-columns: .8fr 1.2fr; margin-top: 42px; }
     .visit-list { display: grid; gap: 24px; }
     .visit-item dt { color: var(--fire); font-size: .7rem; font-weight: 700; letter-spacing: .15em; text-transform: uppercase; }
     .visit-item dd { color: var(--bone); font-size: 1.02rem; margin-top: 5px; }
-    .visit-item a:hover { color: #ff8154; }
+    .visit-item a:hover { color: #ea8c7a; }
     .map-frame { border: 1px solid var(--line); border-radius: 10px; min-height: 410px; overflow: hidden; }
     .map-frame iframe { border: 0; display: block; filter: saturate(.7) contrast(1.05); height: 100%; min-height: 410px; width: 100%; }
     .visit-media { display: grid; gap: 12px; grid-template-columns: minmax(150px, .55fr) minmax(0, 1.45fr); }
     .visit-photo { border: 1px solid var(--line); border-radius: 10px; margin: 0; min-height: 410px; overflow: hidden; position: relative; }
     .visit-photo img { display: block; height: 100%; min-height: 410px; object-fit: cover; width: 100%; }
-    .visit-photo figcaption { background: rgba(12,8,6,.9); bottom: 0; color: var(--bone); font-size: .72rem; left: 0; padding: 9px 11px; position: absolute; right: 0; }
+    .visit-photo figcaption { background: rgba(8,18,13,.92); bottom: 0; color: var(--bone); font-size: .72rem; left: 0; padding: 9px 11px; position: absolute; right: 0; }
 
-    footer { background: #090604; border-top: 1px solid var(--line); padding: 34px 0 92px; }
+    footer { background: #07110c; border-top: 1px solid var(--line); padding: 34px 0 92px; }
     .footer-inner { align-items: center; display: flex; flex-wrap: wrap; gap: 16px 30px; justify-content: space-between; }
-    .footer-copy { color: #8e7d70; font-size: .77rem; }
-    .instagram-link { color: #ff8154; font-size: .85rem; font-weight: 700; }
+    .footer-copy { color: #89988a; font-size: .77rem; }
+    .instagram-link { color: #ea8c7a; font-size: .85rem; font-weight: 700; }
 
     .mobile-actions {
-      background: rgba(16,10,7,.97);
+      background: rgba(8,18,13,.97);
       border-top: 1px solid rgba(255,255,255,.15);
       bottom: 0;
       display: none;
@@ -517,7 +546,7 @@
       z-index: 150;
     }
     .mobile-actions a { border: 1px solid var(--line); border-radius: 5px; color: var(--bone); flex: 1; font-size: .72rem; font-weight: 700; padding: 10px 6px; text-align: center; text-transform: uppercase; }
-    .mobile-actions a:first-child { background: var(--fire-button); border-color: var(--fire-button); color: #fff; }
+    .mobile-actions a:first-child { background: var(--fire-button); border-color: var(--fire-button); color: var(--cream); }
 
     .fade-up { opacity: 0; transform: translateY(18px); transition: opacity .55s ease, transform .55s ease; }
     .fade-up.visible { opacity: 1; transform: none; }
@@ -530,6 +559,7 @@
       .hero-visual { max-width: 620px; }
       .week-board { left: 20px; right: 20px; transform: none; }
       .market-list { grid-template-columns: repeat(2, 1fr); }
+      .case-price-grid { grid-template-columns: repeat(2, 1fr); }
       .order-box { position: static; }
       .family-grid { grid-template-columns: repeat(2, 1fr); }
       .family-card:last-child { grid-column: 1 / -1; }
@@ -558,14 +588,16 @@
       .store-intro-note { margin-top: 2px; }
       .market-list { grid-template-columns: 1fr; }
       .market-item { min-height: 0; }
+      .butcher-prices { padding: 24px 20px; }
+      .butcher-price-heading { grid-template-columns: 1fr; }
+      .case-price-grid { grid-template-columns: 1fr; }
       .market-gallery { grid-template-columns: 1fr 1fr; grid-template-rows: 280px repeat(2, 210px); }
       .market-photo:first-child { grid-column: 1 / -1; grid-row: auto; }
       .house-made-strip { align-items: flex-start; flex-direction: column; padding: 19px 20px; }
       .menu-board, .guide-panel, .order-box { padding: 24px 20px; }
       .price-row { gap: 8px; }
-      .price-name { font-size: 1.14rem; }
-      .price { font-size: .98rem; }
-      .marinated-list { grid-template-columns: 1fr; }
+      .price-name { font-size: 1.35rem; }
+      .price { font-size: 1.2rem; }
       .guide-grid, .family-grid { grid-template-columns: 1fr; }
       .process-card { padding: 26px 22px; }
       .kitchen-gallery { grid-template-rows: 205px 220px; }
@@ -597,23 +629,23 @@
   <nav class="site-nav" aria-label="Main navigation">
     <a class="brand" href="#home">Don <span>Felix</span></a>
     <div class="desktop-links">
-      <a href="#store">Our Store</a>
-      <a href="#menu">BBQ Menu</a>
-      <a href="#process">How We Cook</a>
-      <a href="#guides">Cooking Help</a>
-      <a href="#catering">Catering</a>
-      <a href="#visit">Visit</a>
+      <a href="#store" data-track="navigation_click" data-location="desktop_navigation">The Market</a>
+      <a href="#menu" data-track="navigation_click" data-location="desktop_navigation">BBQ Menu</a>
+      <a href="#process" data-track="navigation_click" data-location="desktop_navigation">How We Cook</a>
+      <a href="#guides" data-track="navigation_click" data-location="desktop_navigation">Cooking Help</a>
+      <a href="#catering" data-track="navigation_click" data-location="desktop_navigation">Catering</a>
+      <a href="#visit" data-track="navigation_click" data-location="desktop_navigation">Visit</a>
     </div>
     <details class="mobile-menu">
       <summary aria-label="Open section menu">Menu</summary>
       <div class="mobile-menu-panel">
-        <a href="#store">Our Store</a>
-        <a href="#menu">BBQ Menu</a>
-        <a href="#process">How We Cook</a>
-        <a href="#guides">Cooking Help</a>
-        <a href="#family">Our Family</a>
-        <a href="#catering">Catering</a>
-        <a href="#visit">Visit</a>
+        <a href="#store" data-track="navigation_click" data-location="mobile_navigation">The Market</a>
+        <a href="#menu" data-track="navigation_click" data-location="mobile_navigation">BBQ Menu</a>
+        <a href="#process" data-track="navigation_click" data-location="mobile_navigation">How We Cook</a>
+        <a href="#guides" data-track="navigation_click" data-location="mobile_navigation">Cooking Help</a>
+        <a href="#family" data-track="navigation_click" data-location="mobile_navigation">Our Family</a>
+        <a href="#catering" data-track="navigation_click" data-location="mobile_navigation">Catering</a>
+        <a href="#visit" data-track="navigation_click" data-location="mobile_navigation">Visit</a>
       </div>
     </details>
     <a class="nav-order" href="sms:+13109457861" data-track="text_order_click" data-location="navigation">Text Order</a>
@@ -623,20 +655,20 @@
     <section class="hero" id="home">
       <div class="container hero-grid">
         <div>
-          <div class="location-pill">West LA · Sawtelle</div>
-          <h1>Butcher shop inside.<br><em>BBQ outside.</em></h1>
+          <div class="location-pill">Family-owned · Sawtelle</div>
+          <h1>Your local market.<br><em>Weekend BBQ, too.</em></h1>
           <p class="hero-copy">
-            Don Felix is our family’s neighborhood market on Sawtelle. <strong>Come in for fresh or marinated meat, our salsas and guacamole, groceries, cold drinks and the things you need for a cookout.</strong> On BBQ days, our mom Graciela has the smokers going outside.
+            Don Felix is our family’s local grocery store and meat market on Sawtelle. <strong>Come in for fresh and marinated meats, the salsas and guacamole we make here, cold drinks, snacks and everyday basics.</strong> On Saturdays and Sundays—and Tuesdays too—our mom Graciela runs the smokers outside.
           </p>
           <div class="button-row">
-            <a class="button button-primary" href="#menu" data-track="bbq_menu_click" data-location="hero">See BBQ &amp; Prices</a>
-            <a class="button button-secondary" href="#store" data-track="store_section_click" data-location="hero">See What’s Inside</a>
+            <a class="button button-primary" href="#store" data-track="store_section_click" data-location="hero">Shop the Market</a>
+            <a class="button button-secondary" href="#menu" data-track="bbq_menu_click" data-location="hero">See the BBQ Menu</a>
             <a class="button button-secondary" href="tel:+13104391039" data-track="call_shop_click" data-location="hero">Call the Shop</a>
           </div>
           <div class="hero-facts" aria-label="Quick facts">
-            <div class="hero-fact"><strong>Butcher counter</strong><span>Fresh cuts &amp; marinated meats</span></div>
-            <div class="hero-fact"><strong>Made here</strong><span>3 salsas &amp; guacamole</span></div>
-            <div class="hero-fact"><strong>BBQ days</strong><span>Tuesday &amp; weekends</span></div>
+            <div class="hero-fact"><strong>Local meat market</strong><span>Fresh cuts &amp; marinated meats</span></div>
+            <div class="hero-fact"><strong>Neighborhood grocery</strong><span>Drinks, snacks &amp; everyday basics</span></div>
+            <div class="hero-fact"><strong>Weekend BBQ</strong><span>Saturday, Sunday &amp; Tuesday</span></div>
           </div>
         </div>
 
@@ -644,8 +676,8 @@
           <img class="hero-photo" src="assets/images/store-meat-counter.jpg" width="768" height="1024" alt="USDA Choice meat counter inside Don Felix Meat Market" fetchpriority="high" decoding="async">
           <div class="hero-photo-label">This is our counter</div>
           <aside class="week-board" aria-label="Weekly barbecue schedule">
-            <div class="board-kicker">Outside the market</div>
-            <h2>BBQ Schedule</h2>
+            <div class="board-kicker">Weekend BBQ + Tuesday</div>
+            <h2>BBQ Days</h2>
             <div class="board-row"><strong>Tuesday</strong><span>BBQ menu</span></div>
             <div class="board-row"><strong>Saturday</strong><span>BBQ menu</span></div>
             <div class="board-row"><strong>Sunday</strong><span>BBQ + brisket</span></div>
@@ -657,9 +689,9 @@
 
     <div class="notice-bar" aria-label="Menu highlights">
       <div class="container notice-inner">
+        <span>Neighborhood grocery</span>
         <span>Fresh meat &amp; custom cuts</span>
-        <span>House salsas &amp; guacamole</span>
-        <span>BBQ Tuesday, Saturday &amp; Sunday</span>
+        <span>Weekend BBQ + Tuesday</span>
       </div>
     </div>
 
@@ -667,11 +699,11 @@
       <div class="container">
         <div class="store-intro">
           <div>
-            <div class="eyebrow">Inside Don Felix</div>
-            <h2 class="section-title">More than <em>the BBQ</em></h2>
-            <p class="section-lede">We’re a full neighborhood meat market. Stop in for dinner, a cookout, a cold drink, or the everyday things you forgot at the grocery store.</p>
+            <div class="eyebrow">Your local market</div>
+            <h2 class="section-title">The neighborhood <em>meat market</em></h2>
+            <p class="section-lede">The store is the heart of Don Felix. Stop in for tonight’s meat, a custom cut, groceries, cold drinks, snacks, or everything you need for the weekend cookout.</p>
           </div>
-          <p class="store-intro-note">One stop for the meat, the salsa, the cold drinks and the foil tray.</p>
+          <p class="store-intro-note">Tell us what you’re cooking. We’ll help with the cut, the marinade and what to take home with it.</p>
         </div>
 
         <div class="market-list" aria-label="What we carry inside the market">
@@ -691,6 +723,42 @@
             <h3>Drinks &amp; Snacks</h3>
             <p>Mexican sodas, bottled drinks, sports and energy drinks, chips, candy and gum.</p>
           </article>
+        </div>
+
+        <div class="butcher-prices fade-up" aria-labelledby="butcher-price-title">
+          <div class="butcher-price-heading">
+            <div>
+              <div class="eyebrow">Inside the butcher case</div>
+              <h3 id="butcher-price-title">Fresh &amp; marinated meat prices</h3>
+            </div>
+            <p>These are raw or marinated meats sold inside the market. They are separate from the cooked BBQ menu below.</p>
+          </div>
+          <div class="case-price-grid">
+            <article class="case-price">
+              <span class="case-kind">Fresh</span>
+              <h4>Beef Ribs</h4>
+              <strong>$12.99 <small>/ lb</small></strong>
+            </article>
+            <article class="case-price">
+              <span class="case-kind">Fresh</span>
+              <h4>Short Ribs</h4>
+              <strong>$14.99 <small>/ lb</small></strong>
+            </article>
+            <article class="case-price">
+              <span class="case-kind">Marinated</span>
+              <h4>Chuck Roll</h4>
+              <strong>$10.99 <small>/ lb</small></strong>
+            </article>
+            <article class="case-price">
+              <span class="case-kind">Marinated</span>
+              <h4>Chicken Legs</h4>
+              <strong>$4.99 <small>/ lb</small></strong>
+            </article>
+          </div>
+          <div class="butcher-price-foot">
+            <p>Prices shown are from the case labels in your photos. Selection and prices can change, so text us if you need a specific cut.</p>
+            <a class="button button-secondary" href="sms:+13109457861?&amp;body=Hi%20Don%20Felix%2C%20what%20fresh%20and%20marinated%20meats%20are%20in%20the%20case%20today%3F" data-track="butcher_case_text_click" data-location="butcher_prices">Ask About Today’s Case</a>
+          </div>
         </div>
 
         <div class="market-gallery" aria-label="Photos from inside Don Felix Meat Market">
@@ -725,9 +793,9 @@
 
     <section class="section" id="menu">
       <div class="container">
-        <div class="eyebrow">BBQ Tuesday · Saturday · Sunday</div>
-        <h2 class="section-title">What’s <em>cooking</em></h2>
-        <p class="section-lede">Here are the prices from our BBQ board. Availability changes during the day, so text before you come if you have your heart set on something.</p>
+        <div class="eyebrow">Cooked outside · Tuesday + weekends</div>
+        <h2 class="section-title">Our BBQ <em>menu</em></h2>
+        <p class="section-lede">This is the cooked BBQ we serve on Saturdays and Sundays, plus Tuesday. Availability changes during the day, so text before you come if you have your heart set on something.</p>
 
         <div class="menu-layout">
           <div class="menu-board fade-up" aria-label="Don Felix barbecue menu">
@@ -752,16 +820,6 @@
               <div class="price-row"><span class="price-name">Mac &amp; Cheese</span><span class="price"><small>Ask for today’s price</small></span></div>
             </div>
 
-            <div class="menu-group">
-              <div class="menu-group-title">Marinated Meats at the Butcher Counter</div>
-              <ul class="marinated-list">
-                <li>Carne Asada</li>
-                <li>Short Ribs</li>
-                <li>Chuck Roll</li>
-                <li>Marinated Chicken</li>
-              </ul>
-              <p class="menu-note" style="margin:16px 0 0;">Call or text for current prices and availability.</p>
-            </div>
           </div>
 
           <aside class="order-box fade-up" id="order">
@@ -773,26 +831,35 @@
                 <label for="order-item">What would you like?</label>
                 <select id="order-item" name="item" required>
                   <option value="">Choose an item</option>
-                  <option>Beef Ribs</option>
-                  <option>Baby Back Ribs</option>
-                  <option>Beef Tri-Tip</option>
-                  <option>Brisket (Sunday)</option>
-                  <option>Chicken Breast</option>
-                  <option>Chicken Leg</option>
-                  <option>Chicken Wings</option>
-                  <option>Mac &amp; Cheese</option>
-                  <option>Carne Asada</option>
-                  <option>Short Ribs</option>
-                  <option>Chuck Roll</option>
-                  <option>Marinated Chicken</option>
-                  <option>Fresh butcher-counter cut</option>
-                  <option>House Guacamole</option>
-                  <option>Green Salsa</option>
-                  <option>Red Salsa</option>
-                  <option>Roasted Salsa</option>
-                  <option>An item from inside the store</option>
-                  <option>Catering / large order</option>
-                  <option>Something else</option>
+                  <optgroup label="Cooked BBQ">
+                    <option>BBQ Beef Ribs</option>
+                    <option>BBQ Baby Back Ribs</option>
+                    <option>BBQ Beef Tri-Tip</option>
+                    <option>BBQ Brisket (Sunday)</option>
+                    <option>BBQ Chicken Breast</option>
+                    <option>BBQ Chicken Leg</option>
+                    <option>BBQ Chicken Wings</option>
+                    <option>Mac &amp; Cheese</option>
+                  </optgroup>
+                  <optgroup label="Inside the butcher case">
+                    <option>Fresh Beef Ribs</option>
+                    <option>Fresh Short Ribs</option>
+                    <option>Marinated Chuck Roll</option>
+                    <option>Marinated Chicken Legs</option>
+                    <option>Carne Asada</option>
+                    <option>Another fresh butcher-counter cut</option>
+                  </optgroup>
+                  <optgroup label="Made here &amp; groceries">
+                    <option>House Guacamole</option>
+                    <option>Green Salsa</option>
+                    <option>Red Salsa</option>
+                    <option>Roasted Salsa</option>
+                    <option>An item from inside the store</option>
+                  </optgroup>
+                  <optgroup label="Large orders">
+                    <option>Catering / large order</option>
+                    <option>Something else</option>
+                  </optgroup>
                 </select>
               </div>
               <div class="field">
@@ -1134,6 +1201,13 @@
     });
 
     const orderForm = document.getElementById('text-order-form');
+    let orderBuilderStarted = false;
+    orderForm.addEventListener('focusin', () => {
+      if (!orderBuilderStarted) {
+        orderBuilderStarted = true;
+        trackAction('order_builder_start', { location: 'order_builder' });
+      }
+    });
     orderForm.addEventListener('submit', (event) => {
       event.preventDefault();
       const data = new FormData(orderForm);
@@ -1163,6 +1237,20 @@
       quantityResult.textContent = `Start around ${pounds} lb of BBQ meat, then text us to confirm.`;
       trackAction('serving_estimator_use', { guest_count: guestCount, estimated_pounds: pounds });
     });
+
+    if ('IntersectionObserver' in window) {
+      const viewedSections = new Set();
+      const sectionObserver = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting && !viewedSections.has(entry.target.id)) {
+            viewedSections.add(entry.target.id);
+            trackAction('section_view', { section: entry.target.id });
+            sectionObserver.unobserve(entry.target);
+          }
+        });
+      }, { rootMargin: '-20% 0px -20% 0px', threshold: 0.01 });
+      document.querySelectorAll('main > section[id]').forEach((section) => sectionObserver.observe(section));
+    }
 
     document.querySelectorAll('.mobile-menu-panel a').forEach((link) => {
       link.addEventListener('click', () => link.closest('details').removeAttribute('open'));
