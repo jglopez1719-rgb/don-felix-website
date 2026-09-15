@@ -26,9 +26,11 @@ Current BBQ schedule shown on the site:
 
 The “How We Cook” section also lists the family’s approximate smoking times and the seasonings and marinades they identified: Santa Maria seasoning, Chef Merito Carne Asada Seasoning, Goya Mojo Criollo and Goya Naranja Agria. Keep the word “approximate” with the smoking times because meat size, weather and the smoker can change a cook. Do not claim that every product is used on every meat.
 
-## Store photos
+## Visual direction and reviews
 
-The optimized website photos are in `assets/images`. They came from original Don Felix store and kitchen photos. Retail website screenshots were intentionally not added to the public site.
+The public page uses a blackboard-and-chalk design. The store and kitchen snapshots supplied while planning the site are references only and do not appear in the page. The only branded image used publicly is a polished chalkboard link preview for text messages and social sharing.
+
+The reviews section uses short excerpts from real customer reviews supplied by the family. Keep the customer names attached to the correct excerpts, do not invent ratings or review totals, and link visitors to Google to read the complete reviews.
 
 ## Visitor analytics
 
