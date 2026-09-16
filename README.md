@@ -4,18 +4,22 @@ Static one-page website for Don Felix Meat Market in Los Angeles.
 
 The site represents the whole store: the butcher counter, marinated meats, house-made salsa and guacamole, groceries, drinks, snacks, BBQ and catering. Customer tools include a text-order builder, a BBQ quantity estimator, reheating instructions and a raw-meat temperature guide.
 
+## Internal order process
+
+Use [ORDER_CONFIRMATION_SOP.md](ORDER_CONFIRMATION_SOP.md) whenever the family answers a text order. It includes the confirmation checklist, customer reply templates, a simple order log and a weekly review that connects real completed orders with the website analytics. The SOP is internal documentation and is not shown on the public website.
+
 ## Updating the menu
 
 The page has two clearly separated price areas: raw and marinated meat sold inside the market in the `#store` section, and cooked BBQ in the `#menu` section. The text-order builder has matching groups in the `<select id="order-item">` element. When an item changes, update the relevant price area and the matching order option.
 
-Butcher-case prices read from the supplied store photos:
+The butcher-case board leads with the four meats customers buy most, in this order:
 
-- Fresh beef ribs: $12.99/lb
+- Marinated carne asada: $15.99/lb
 - Fresh short ribs: $14.99/lb
-- Marinated chuck roll: $10.99/lb
-- Marinated chicken legs: $4.99/lb
+- Marinated chicken breast: price not yet confirmed
+- Marinated chicken leg: $4.99/lb
 
-Several other case labels were not clear enough to read, so those prices were intentionally left off the website. Because counter prices can change, the public page tells customers to text for confirmation.
+The chicken-breast card tells customers to ask for today’s price so the website does not guess. Because counter prices can change, the public page tells customers to text for confirmation.
 
 Current BBQ schedule shown on the site:
 
@@ -23,6 +27,19 @@ Current BBQ schedule shown on the site:
 - Saturday
 - Sunday
 - Brisket on Sunday
+
+Current cooked BBQ and side details:
+
+- Chicken breast: $6.99 each
+- Chicken leg: $5.99 each
+- Chicken wings: $10.99/lb
+- Mac and cheese, small 8 oz: $5
+- Mac and cheese, medium 16 oz: $10
+- All listed prices are before tax
+
+The house-made list also includes green salsa, red salsa, roasted salsa, guacamole, coleslaw, macaroni salad, potato salad and BBQ sauce. Prices for the remaining sides and sauces should stay as “ask at the counter” until the family confirms them.
+
+The text-order builder asks for a pickup day and a required pickup time in 30-minute steps from 9:00 AM through 9:00 PM. The chosen time is included in the prepared text message and in the privacy-safe analytics event.
 
 The “How We Cook” section also lists the family’s approximate smoking times and the seasonings and marinades they identified: Santa Maria seasoning, Chef Merito Carne Asada Seasoning, Goya Mojo Criollo and Goya Naranja Agria. Keep the word “approximate” with the smoking times because meat size, weather and the smoker can change a cook. Do not claim that every product is used on every meat.
 
@@ -75,7 +92,6 @@ Website analytics can count a tap on a phone or text link. It cannot confirm tha
 ## Content still worth confirming
 
 - The wood used in the smokers, if the family wants that public
-- A confirmed price for mac and cheese
 - Any butcher-counter prices not legible in the supplied photos
-- Current prices and container sizes for salsa and guacamole
+- Current prices and container sizes for salsa, guacamole, coleslaw, macaroni salad, potato salad and BBQ sauce
 - Holiday turkey sizes, pricing and order deadlines
