@@ -4,6 +4,10 @@ Static one-page website for Don Felix Meat Market in Los Angeles.
 
 The site represents the whole store: the butcher counter, marinated meats, house-made salsa and guacamole, groceries, drinks, snacks, BBQ and catering. Customer tools include a text-order builder, a BBQ quantity estimator, reheating instructions and a raw-meat temperature guide.
 
+## Internal order process
+
+Use [ORDER_CONFIRMATION_SOP.md](ORDER_CONFIRMATION_SOP.md) whenever the family answers a text order. It includes the confirmation checklist, customer reply templates, a simple order log and a weekly review that connects real completed orders with the website analytics. The SOP is internal documentation and is not shown on the public website.
+
 ## Updating the menu
 
 The page has two clearly separated price areas: raw and marinated meat sold inside the market in the `#store` section, and cooked BBQ in the `#menu` section. The text-order builder has matching groups in the `<select id="order-item">` element. When an item changes, update the relevant price area and the matching order option.
