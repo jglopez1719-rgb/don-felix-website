@@ -1,4 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Don Felix">
-  <rect width="64" height="64" rx="12" fill="#173024"/>
-  <path d="M13 12h17c14 0 23 7 23 20S44 52 30 52H13V12Zm12 9v22h5c7 0 11-4 11-11s-4-11-11-11h-5Z" fill="#d9ad4d"/>
+  <rect width="64" height="64" rx="12" fill="#090a09"/>
+  <path d="M13 12h17c14 0 23 7 23 20S44 52 30 52H13V12Zm12 9v22h5c7 0 11-4 11-11s-4-11-11-11h-5Z" fill="#f4f0e4"/>
+  <path d="M9 55h46" stroke="#e9cd78" stroke-width="3" stroke-linecap="round" opacity=".9"/>
 </svg>
