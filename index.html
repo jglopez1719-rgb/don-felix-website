@@ -377,6 +377,7 @@
     .case-kind { color: var(--blue); display: block; font-family: var(--chalk-font); font-size: .9rem; font-weight: 400; letter-spacing: .12em; text-transform: uppercase; }
     .case-price h4 { font-family: var(--chalk-font); font-size: 1.45rem; font-weight: 400; line-height: 1.1; margin-top: 9px; }
     .case-price strong { color: var(--gold); display: block; font-family: var(--chalk-font); font-size: 1.5rem; font-weight: 400; margin-top: 13px; }
+    .case-price strong.price-tbd { font-size: 1.08rem; line-height: 1.15; }
     .case-price small { color: var(--ash); font-size: .7rem; font-weight: 500; }
     .butcher-price-foot { align-items: center; border-top: 1px solid var(--line); display: flex; flex-wrap: wrap; gap: 16px 24px; justify-content: space-between; margin-top: 24px; padding-top: 20px; }
     .butcher-price-foot p { color: var(--ash); font-size: .78rem; max-width: 650px; }
@@ -702,29 +703,29 @@
           <div class="butcher-price-heading">
             <div>
               <div class="eyebrow">Inside the butcher case</div>
-              <h3 id="butcher-price-title">Fresh &amp; marinated meat prices</h3>
+              <h3 id="butcher-price-title">Our four best sellers</h3>
             </div>
-            <p>These are raw or marinated meats sold inside the market. They are separate from the cooked BBQ menu below.</p>
+            <p>These are what customers take home most from our butcher counter, listed in order. They are separate from the cooked BBQ menu below.</p>
           </div>
           <div class="case-price-grid">
             <article class="case-price">
-              <span class="case-kind">Fresh</span>
-              <h4>Beef Ribs</h4>
-              <strong>$12.99 <small>/ lb</small></strong>
+              <span class="case-kind">#1 · Marinated</span>
+              <h4>Carne Asada</h4>
+              <strong>$15.99 <small>/ lb</small></strong>
             </article>
             <article class="case-price">
-              <span class="case-kind">Fresh</span>
+              <span class="case-kind">#2 · Fresh</span>
               <h4>Short Ribs</h4>
               <strong>$14.99 <small>/ lb</small></strong>
             </article>
             <article class="case-price">
-              <span class="case-kind">Marinated</span>
-              <h4>Chuck Roll</h4>
-              <strong>$10.99 <small>/ lb</small></strong>
+              <span class="case-kind">#3 · Marinated</span>
+              <h4>Chicken Breast</h4>
+              <strong class="price-tbd">Ask for today’s price</strong>
             </article>
             <article class="case-price">
-              <span class="case-kind">Marinated</span>
-              <h4>Chicken Legs</h4>
+              <span class="case-kind">#4 · Marinated</span>
+              <h4>Chicken Leg</h4>
               <strong>$4.99 <small>/ lb</small></strong>
             </article>
           </div>
@@ -792,11 +793,10 @@
                     <option>Mac &amp; Cheese</option>
                   </optgroup>
                   <optgroup label="Inside the butcher case">
-                    <option>Fresh Beef Ribs</option>
+                    <option>Marinated Carne Asada</option>
                     <option>Fresh Short Ribs</option>
-                    <option>Marinated Chuck Roll</option>
-                    <option>Marinated Chicken Legs</option>
-                    <option>Carne Asada</option>
+                    <option>Marinated Chicken Breast</option>
+                    <option>Marinated Chicken Leg</option>
                     <option>Another fresh butcher-counter cut</option>
                   </optgroup>
                   <optgroup label="Made here &amp; groceries">

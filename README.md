@@ -8,14 +8,14 @@ The site represents the whole store: the butcher counter, marinated meats, house
 
 The page has two clearly separated price areas: raw and marinated meat sold inside the market in the `#store` section, and cooked BBQ in the `#menu` section. The text-order builder has matching groups in the `<select id="order-item">` element. When an item changes, update the relevant price area and the matching order option.
 
-Butcher-case prices read from the supplied store photos:
+The butcher-case board leads with the four meats customers buy most, in this order:
 
-- Fresh beef ribs: $12.99/lb
+- Marinated carne asada: $15.99/lb
 - Fresh short ribs: $14.99/lb
-- Marinated chuck roll: $10.99/lb
-- Marinated chicken legs: $4.99/lb
+- Marinated chicken breast: price not yet confirmed
+- Marinated chicken leg: $4.99/lb
 
-Several other case labels were not clear enough to read, so those prices were intentionally left off the website. Because counter prices can change, the public page tells customers to text for confirmation.
+The chicken-breast card tells customers to ask for today’s price so the website does not guess. Because counter prices can change, the public page tells customers to text for confirmation.
 
 Current BBQ schedule shown on the site:
 
