@@ -174,13 +174,16 @@
       z-index: 100;
     }
     .brand {
-      color: var(--cream);
+      align-items: baseline;
+      display: inline-flex;
+      gap: .32em;
       font-family: var(--chalk-font);
       font-size: 1.65rem;
       font-weight: 400;
       white-space: nowrap;
     }
-    .brand span { color: var(--gold); }
+    .brand-name { color: var(--blue); }
+    .brand-market { color: var(--fire); }
     .desktop-links { display: flex; gap: 26px; }
     .desktop-links a {
       color: var(--ash);
@@ -600,7 +603,7 @@
   <a class="skip-link" href="#main">Skip to the main content</a>
 
   <nav class="site-nav" aria-label="Main navigation">
-    <a class="brand" href="#home">Don <span>Felix</span></a>
+    <a class="brand" href="#home" aria-label="Don Felix Meat Market home"><span class="brand-name">Don Felix</span><span class="brand-market">Meat Market</span></a>
     <div class="desktop-links">
       <a href="#store" data-track="navigation_click" data-location="desktop_navigation">The Market</a>
       <a href="#menu" data-track="navigation_click" data-location="desktop_navigation">BBQ Menu</a>
@@ -737,7 +740,7 @@
 
         <div class="house-made-strip fade-up">
           <strong>Made here in the market</strong>
-          <span>Green salsa · Red salsa · Roasted salsa · Guacamole</span>
+          <span>Green salsa · Red salsa · Roasted salsa · Guacamole · Coleslaw · Macaroni salad · Potato salad · BBQ sauce</span>
         </div>
       </div>
     </section>
@@ -750,7 +753,7 @@
 
         <div class="menu-layout">
           <div class="menu-board fade-up" aria-label="Don Felix barbecue menu">
-            <p class="menu-note">Prices shown per pound. Brisket is available Sundays. Please order larger amounts in advance.</p>
+            <p class="menu-note">All prices are before tax. Beef and wings are priced per pound; chicken breast and legs are priced by the piece. Brisket is available Sundays. Please order larger amounts in advance.</p>
 
             <div class="menu-group">
               <div class="menu-group-title">Ribs &amp; Beef</div>
@@ -764,11 +767,20 @@
             </div>
 
             <div class="menu-group">
-              <div class="menu-group-title">Chicken &amp; Sides</div>
-              <div class="price-row"><span class="price-name">Chicken Breast</span><span class="price"><sup>$</sup>6.99 <small>/ lb</small></span></div>
-              <div class="price-row"><span class="price-name">Chicken Leg</span><span class="price"><sup>$</sup>5.99 <small>/ lb</small></span></div>
+              <div class="menu-group-title">Chicken</div>
+              <div class="price-row"><span class="price-name">Chicken Breast</span><span class="price"><sup>$</sup>6.99 <small>each</small></span></div>
+              <div class="price-row"><span class="price-name">Chicken Leg</span><span class="price"><sup>$</sup>5.99 <small>each</small></span></div>
               <div class="price-row"><span class="price-name">Chicken Wings</span><span class="price"><sup>$</sup>10.99 <small>/ lb</small></span></div>
-              <div class="price-row"><span class="price-name">Mac &amp; Cheese</span><span class="price"><small>Ask for today’s price</small></span></div>
+            </div>
+
+            <div class="menu-group">
+              <div class="menu-group-title">House Sides &amp; Sauce</div>
+              <div class="price-row"><span class="price-name">Mac &amp; Cheese · Small 8 oz</span><span class="price"><sup>$</sup>5</span></div>
+              <div class="price-row"><span class="price-name">Mac &amp; Cheese · Medium 16 oz</span><span class="price"><sup>$</sup>10</span></div>
+              <div class="price-row"><span class="price-name">Coleslaw</span><span class="price"><small>Ask at the counter</small></span></div>
+              <div class="price-row"><span class="price-name">Macaroni Salad</span><span class="price"><small>Ask at the counter</small></span></div>
+              <div class="price-row"><span class="price-name">Potato Salad</span><span class="price"><small>Ask at the counter</small></span></div>
+              <div class="price-row"><span class="price-name">BBQ Sauce</span><span class="price"><small>Ask at the counter</small></span></div>
             </div>
 
           </div>
@@ -787,10 +799,15 @@
                     <option>BBQ Baby Back Ribs</option>
                     <option>BBQ Beef Tri-Tip</option>
                     <option>BBQ Brisket (Sunday)</option>
-                    <option>BBQ Chicken Breast</option>
-                    <option>BBQ Chicken Leg</option>
-                    <option>BBQ Chicken Wings</option>
-                    <option>Mac &amp; Cheese</option>
+                    <option>BBQ Chicken Breast — $6.99 each before tax</option>
+                    <option>BBQ Chicken Leg — $5.99 each before tax</option>
+                    <option>BBQ Chicken Wings — $10.99/lb before tax</option>
+                    <option>Mac &amp; Cheese — Small 8 oz ($5 before tax)</option>
+                    <option>Mac &amp; Cheese — Medium 16 oz ($10 before tax)</option>
+                    <option>Coleslaw</option>
+                    <option>Macaroni Salad</option>
+                    <option>Potato Salad</option>
+                    <option>BBQ Sauce</option>
                   </optgroup>
                   <optgroup label="Inside the butcher case">
                     <option>Marinated Carne Asada</option>
@@ -831,12 +848,43 @@
                 </select>
               </div>
               <div class="field">
+                <label for="pickup-time">Pickup time</label>
+                <select id="pickup-time" name="time" required>
+                  <option value="">Choose a time</option>
+                  <option>9:00 AM</option>
+                  <option>9:30 AM</option>
+                  <option>10:00 AM</option>
+                  <option>10:30 AM</option>
+                  <option>11:00 AM</option>
+                  <option>11:30 AM</option>
+                  <option>12:00 PM</option>
+                  <option>12:30 PM</option>
+                  <option>1:00 PM</option>
+                  <option>1:30 PM</option>
+                  <option>2:00 PM</option>
+                  <option>2:30 PM</option>
+                  <option>3:00 PM</option>
+                  <option>3:30 PM</option>
+                  <option>4:00 PM</option>
+                  <option>4:30 PM</option>
+                  <option>5:00 PM</option>
+                  <option>5:30 PM</option>
+                  <option>6:00 PM</option>
+                  <option>6:30 PM</option>
+                  <option>7:00 PM</option>
+                  <option>7:30 PM</option>
+                  <option>8:00 PM</option>
+                  <option>8:30 PM</option>
+                  <option>9:00 PM</option>
+                </select>
+              </div>
+              <div class="field">
                 <label for="order-name">Your name</label>
                 <input id="order-name" name="name" type="text" autocomplete="name" placeholder="First name">
               </div>
               <button class="button button-primary" type="submit">Open My Text</button>
             </form>
-            <p class="form-help">Your order is not confirmed until the family replies.</p>
+            <p class="form-help">Prices are before tax. Your order is not confirmed until the family replies with availability and a pickup confirmation.</p>
           </aside>
         </div>
       </div>
@@ -1125,7 +1173,7 @@
 
   <footer>
     <div class="container footer-inner">
-      <a class="brand" href="#home">Don <span>Felix</span> Meat Market</a>
+      <a class="brand" href="#home" aria-label="Don Felix Meat Market home"><span class="brand-name">Don Felix</span><span class="brand-market">Meat Market</span></a>
       <div class="footer-copy">3987 Sawtelle Blvd · Los Angeles, CA 90066 · Family-owned and operated</div>
       <a class="instagram-link" href="https://www.instagram.com/donfelixmeatmarket" target="_blank" rel="noopener" data-track="instagram_click" data-location="footer">@donfelixmeatmarket ↗</a>
     </div>
@@ -1182,10 +1230,11 @@
       const item = data.get('item');
       const amount = data.get('amount');
       const day = data.get('day');
+      const time = data.get('time');
       const name = data.get('name');
       const intro = name ? `Hi Don Felix, this is ${name}.` : 'Hi Don Felix.';
-      const message = `${intro} I would like ${amount} of ${item} for pickup ${day}. Is that available?`;
-      trackAction('order_builder_submit', { item, pickup_day: day });
+      const message = `${intro} I would like ${amount} of ${item} for pickup ${day} at ${time}. Is that available?`;
+      trackAction('order_builder_submit', { item, pickup_day: day, pickup_time: time });
       window.location.href = `sms:+13109457861?&body=${encodeURIComponent(message)}`;
     });
 

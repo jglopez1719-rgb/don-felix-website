@@ -24,6 +24,19 @@ Current BBQ schedule shown on the site:
 - Sunday
 - Brisket on Sunday
 
+Current cooked BBQ and side details:
+
+- Chicken breast: $6.99 each
+- Chicken leg: $5.99 each
+- Chicken wings: $10.99/lb
+- Mac and cheese, small 8 oz: $5
+- Mac and cheese, medium 16 oz: $10
+- All listed prices are before tax
+
+The house-made list also includes green salsa, red salsa, roasted salsa, guacamole, coleslaw, macaroni salad, potato salad and BBQ sauce. Prices for the remaining sides and sauces should stay as “ask at the counter” until the family confirms them.
+
+The text-order builder asks for a pickup day and a required pickup time in 30-minute steps from 9:00 AM through 9:00 PM. The chosen time is included in the prepared text message and in the privacy-safe analytics event.
+
 The “How We Cook” section also lists the family’s approximate smoking times and the seasonings and marinades they identified: Santa Maria seasoning, Chef Merito Carne Asada Seasoning, Goya Mojo Criollo and Goya Naranja Agria. Keep the word “approximate” with the smoking times because meat size, weather and the smoker can change a cook. Do not claim that every product is used on every meat.
 
 ## Visual direction and reviews
@@ -75,7 +88,6 @@ Website analytics can count a tap on a phone or text link. It cannot confirm tha
 ## Content still worth confirming
 
 - The wood used in the smokers, if the family wants that public
-- A confirmed price for mac and cheese
 - Any butcher-counter prices not legible in the supplied photos
-- Current prices and container sizes for salsa and guacamole
+- Current prices and container sizes for salsa, guacamole, coleslaw, macaroni salad, potato salad and BBQ sauce
 - Holiday turkey sizes, pricing and order deadlines
