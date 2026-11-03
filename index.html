@@ -380,7 +380,6 @@
     .case-kind { color: var(--blue); display: block; font-family: var(--chalk-font); font-size: .9rem; font-weight: 400; letter-spacing: .12em; text-transform: uppercase; }
     .case-price h4 { font-family: var(--chalk-font); font-size: 1.45rem; font-weight: 400; line-height: 1.1; margin-top: 9px; }
     .case-price strong { color: var(--gold); display: block; font-family: var(--chalk-font); font-size: 1.5rem; font-weight: 400; margin-top: 13px; }
-    .case-price strong.price-tbd { font-size: 1.08rem; line-height: 1.15; }
     .case-price small { color: var(--ash); font-size: .7rem; font-weight: 500; }
     .butcher-price-foot { align-items: center; border-top: 1px solid var(--line); display: flex; flex-wrap: wrap; gap: 16px 24px; justify-content: space-between; margin-top: 24px; padding-top: 20px; }
     .butcher-price-foot p { color: var(--ash); font-size: .78rem; max-width: 650px; }
@@ -724,7 +723,6 @@
             <article class="case-price">
               <span class="case-kind">#3 · Marinated</span>
               <h4>Chicken Breast</h4>
-              <strong class="price-tbd">Ask for today’s price</strong>
             </article>
             <article class="case-price">
               <span class="case-kind">#4 · Marinated</span>
@@ -777,10 +775,16 @@
               <div class="menu-group-title">House Sides &amp; Sauce</div>
               <div class="price-row"><span class="price-name">Mac &amp; Cheese · Small 8 oz</span><span class="price"><sup>$</sup>5</span></div>
               <div class="price-row"><span class="price-name">Mac &amp; Cheese · Medium 16 oz</span><span class="price"><sup>$</sup>10</span></div>
-              <div class="price-row"><span class="price-name">Coleslaw</span><span class="price"><small>Ask at the counter</small></span></div>
-              <div class="price-row"><span class="price-name">Macaroni Salad</span><span class="price"><small>Ask at the counter</small></span></div>
-              <div class="price-row"><span class="price-name">Potato Salad</span><span class="price"><small>Ask at the counter</small></span></div>
-              <div class="price-row"><span class="price-name">BBQ Sauce</span><span class="price"><small>Ask at the counter</small></span></div>
+              <div class="price-row"><span class="price-name">Coleslaw · Small</span><span class="price"><sup>$</sup>4</span></div>
+              <div class="price-row"><span class="price-name">Coleslaw · Medium</span><span class="price"><sup>$</sup>6</span></div>
+              <div class="price-row"><span class="price-name">Macaroni Salad · Small</span><span class="price"><sup>$</sup>4</span></div>
+              <div class="price-row"><span class="price-name">Macaroni Salad · Medium</span><span class="price"><sup>$</sup>6</span></div>
+              <div class="price-row"><span class="price-name">Potato Salad · Small</span><span class="price"><sup>$</sup>4</span></div>
+              <div class="price-row"><span class="price-name">Potato Salad · Medium</span><span class="price"><sup>$</sup>6</span></div>
+              <div class="price-row"><span class="price-name">Guacamole · Small</span><span class="price"><sup>$</sup>7</span></div>
+              <div class="price-row"><span class="price-name">Guacamole · Medium</span><span class="price"><sup>$</sup>13</span></div>
+              <div class="price-row"><span class="price-name">BBQ Sauce · First 2</span><span class="price"><small>Included</small></span></div>
+              <div class="price-row"><span class="price-name">Additional BBQ Sauce</span><span class="price"><sup>$</sup>0.50 <small>each</small></span></div>
             </div>
 
           </div>
@@ -804,10 +808,13 @@
                     <option>BBQ Chicken Wings — $10.99/lb before tax</option>
                     <option>Mac &amp; Cheese — Small 8 oz ($5 before tax)</option>
                     <option>Mac &amp; Cheese — Medium 16 oz ($10 before tax)</option>
-                    <option>Coleslaw</option>
-                    <option>Macaroni Salad</option>
-                    <option>Potato Salad</option>
-                    <option>BBQ Sauce</option>
+                    <option>Coleslaw — Small ($4 before tax)</option>
+                    <option>Coleslaw — Medium ($6 before tax)</option>
+                    <option>Macaroni Salad — Small ($4 before tax)</option>
+                    <option>Macaroni Salad — Medium ($6 before tax)</option>
+                    <option>Potato Salad — Small ($4 before tax)</option>
+                    <option>Potato Salad — Medium ($6 before tax)</option>
+                    <option>BBQ Sauce — First 2 included; additional $0.50 each</option>
                   </optgroup>
                   <optgroup label="Inside the butcher case">
                     <option>Marinated Carne Asada</option>
@@ -817,7 +824,8 @@
                     <option>Another fresh butcher-counter cut</option>
                   </optgroup>
                   <optgroup label="Made here &amp; groceries">
-                    <option>House Guacamole</option>
+                    <option>House Guacamole — Small ($7 before tax)</option>
+                    <option>House Guacamole — Medium ($13 before tax)</option>
                     <option>Green Salsa</option>
                     <option>Red Salsa</option>
                     <option>Roasted Salsa</option>

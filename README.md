@@ -16,10 +16,10 @@ The butcher-case board leads with the four meats customers buy most, in this ord
 
 - Marinated carne asada: $15.99/lb
 - Fresh short ribs: $14.99/lb
-- Marinated chicken breast: price not yet confirmed
+- Marinated chicken breast: price not yet confirmed and therefore omitted from the public price display
 - Marinated chicken leg: $4.99/lb
 
-The chicken-breast card tells customers to ask for today’s price so the website does not guess. Because counter prices can change, the public page tells customers to text for confirmation.
+Never publish a guessed price or a placeholder such as “ask for today’s price.” Keep an unconfirmed item’s price off the public display until the family confirms the exact amount and unit.
 
 Current BBQ schedule shown on the site:
 
@@ -35,9 +35,18 @@ Current cooked BBQ and side details:
 - Chicken wings: $10.99/lb
 - Mac and cheese, small 8 oz: $5
 - Mac and cheese, medium 16 oz: $10
+- Coleslaw, small: $4
+- Coleslaw, medium: $6
+- Macaroni salad, small: $4
+- Macaroni salad, medium: $6
+- Potato salad, small: $4
+- Potato salad, medium: $6
+- Guacamole, small: $7
+- Guacamole, medium: $13
+- BBQ sauce: first 2 included, then $0.50 each
 - All listed prices are before tax
 
-The house-made list also includes green salsa, red salsa, roasted salsa, guacamole, coleslaw, macaroni salad, potato salad and BBQ sauce. Prices for the remaining sides and sauces should stay as “ask at the counter” until the family confirms them.
+The house-made list also includes green salsa, red salsa and roasted salsa. Do not display prices for these salsas until the family confirms the exact container sizes and prices.
 
 The text-order builder asks for a pickup day and a required pickup time in 30-minute steps from 9:00 AM through 9:00 PM. The chosen time is included in the prepared text message and in the privacy-safe analytics event.
 
